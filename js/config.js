@@ -84,7 +84,7 @@ let respecConfig = {
   // - Kijk eerst naar de beschikbare www.specref.org .
   // - Kijk daarna in de organisatieconfig.
   // - Voeg dan pas hieronder toe.
-  localBiblio: 
+  localBiblio:
   {
     MIM12: {
       id: "MIM12",
@@ -93,6 +93,67 @@ let respecConfig = {
       status: "Definitief",
       publisher: "Geonovum",
       date: "2024-06-13"
-    }
+    },
+    "CIM-BG": {
+      title: "Conceptueel Informatiemodel Bestuurlijke Gebieden",
+      href: "https://geonovum.github.io/bestuurlijke-gebieden-cm/",
+      status: "Versie ter vaststelling",
+      publisher: "Geonovum",
+      date: "2026-02-04"
+    },
+    "NEN3610-2022": {
+      title: "NEN-3610 Basismodel geo-informatie",
+      href: "https://www.nen.nl/nen-3610-2022-nl-296137",
+      status: "Definitief",
+      date: "Juni 2022",
+      publisher: "NEN",
+    },
+    "EMSO": {
+      title: "DiS Geo : Eisen aan model samenhangende objectenregistratie",
+      href: "https://docs.geostandaarden.nl/disgeo/emso/",
+      status: "Versie ter vaststelling",
+      date: "2021-06-16",
+      publisher: "Geonovum",
+    },
+    "MODPR": {
+      title: "Modelleerprincipes samenhangende objectenregistratie",
+      href: "https://geonovum.github.io/disgeo-imsor/modelleerprincipes/",
+      status: "levend document",
+      publisher: "Geonovum",
+    },
+    "gebruik-crs": {
+      title: "Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie",
+      href: "https://docs.geostandaarden.nl/crs/def-hr-crs-20220314/",
+      status: "Vastgestelde versie",
+      publisher: "Geonovum",
+      date: "2022-03-14",
+    },
+    "ISO-19125": {
+      title: "Geographic information — Simple feature access — Part 1: Common architecture",
+      href: "https://www.iso.org/standard/40114.html",
+      status: "Published",
+      publisher: "ISO/TC 211",
+      date: "2004-11",
+    },
+    "ISO-19107-2019": {
+      title: "Geographic information — Spatial schema",
+      href: "https://www.iso.org/standard/66175.html",
+      status: "Definitief",
+      publisher: "ISO",
+      date: "2019-12",
+    },
+    "GIMEG": {
+      href: "https://docs.geostandaarden.nl/nen3610/gimeg",
+      publisher: "Geonovum",
+      authors: ["Linda van den Brink", "Paul Janssen", "Wilko Quak"],
+      title: "Geometrie in model en GML",
+    },
+    "TOOI-ONT-1.6.2": {
+      title: "TOOI - Ontologie 1.6.2",
+      href: "https://standaarden.overheid.nl/tooi/doc/tooi-ontologie-1.6.2/",
+      status: "Vastgestelde versie",
+      publisher: "Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties (KOOP)",
+      date: "04 juli 2025",
+    },
   }
 };

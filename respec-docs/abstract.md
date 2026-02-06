@@ -1,1 +1,3 @@
-TODO: vul in abstract.md een abstract in.
+Bestuurlijke gebieden zijn die gebieden waarbinnen het Rijk, gemeenten, provincies, waterschappen en samenwerkingsverbanden zoals veiligheidsregio's bestuurlijke verantwoordelijkheid uitoefenen. Ook de maritieme zones (territoriale zee, aansluitende zone, exclusieve economische zone en continentaal plat) behoren hiertoe.
+
+Dit document beschrijft het logisch gegevensmodel voor bestuurlijke gebieden (LGM-BG). Het is een uitwerking van het conceptueel informatiemodel [[CIM-BG]] en beschrijft de gegevens die nodig zijn om bestuurlijke gebieden te registreren en uit te wisselen. Het model specificeert onder meer de identificatie van objecten, het bitemporale historiemodel, de ondersteunde coördinaatreferentiesystemen en de registratiegegevens.
