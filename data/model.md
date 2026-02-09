@@ -37,7 +37,7 @@
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/registratieve_ruimte ">http://begrippen.geostandaarden.nl/bg/id/begrip/registratieve_ruimte </a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/registratieve_ruimte">http://begrippen.geostandaarden.nl/bg/id/begrip/registratieve_ruimte</a>
 </td>
 </tr>
 <tr>
@@ -3109,18 +3109,6 @@ Eind van de periode dat deze versie van het informatieobject actueel is in de re
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_primaire_bron">primaireBron</a>
-</td>
-<td>
-Een primaire bron voor een object is een entiteit op basis waarvan de totstandkoming van het object direct gebaseerd is.</td>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit">Bronentiteit</a>
-</td>
-<td>
-0..1</td>
-</tr>
-<tr>
-<td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_verantwoordelijke_partij">verantwoordelijkePartij</a>
 </td>
 <td>
@@ -3130,6 +3118,18 @@ Een verantwoordelijke partij is een actor die verantwoordelijk is voor het objec
 </td>
 <td>
 1</td>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_afgeleid_van">afgeleidVan</a>
+</td>
+<td>
+Een afleiding is een transformatie van een entiteit naar een andere, een update van een entiteit die resulteert in een nieuwe entiteit, of de constructie van een nieuwe entiteit op basis van een reeds bestaande entiteit.</td>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit">Bronentiteit</a>
+</td>
+<td>
+0..*</td>
 </tr>
 </tbody>
 </table>
@@ -3272,7 +3272,7 @@ Een verantwoordelijke partij is een actor die verantwoordelijk is voor het objec
 </tr>
 <tr>
 <th>Indicatie afleidbaar</th>
-<td>Nee</td>
+<td>Ja</td>
 </tr>
 <tr>
 <th>Indicatie classificerend</th>
@@ -3590,77 +3590,6 @@ Een verantwoordelijke partij is een actor die verantwoordelijk is voor het objec
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
-<section class="notoc" id="informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_primaire_bron">
-<h6>primaireBron</h6>
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tr>
-<th>Identificatie</th>
-<td>http://www.w3.org/ns/prov#hadPrimarySource</td>
-</tr>
-<tr>
-<th>Naam</th>
-<td>primaireBron</td>
-</tr>
-<tr>
-<th>Herkomst</th>
-<td>LGM-BG</td>
-</tr>
-<tr>
-<th>Definitie</th>
-<td>Een primaire bron voor een object is een entiteit op basis waarvan de totstandkoming van het object direct gebaseerd is.</td>
-</tr>
-<tr>
-<th>Herkomst definitie</th>
-<td>PROV-O</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2026-02-04</td>
-</tr>
-<tr>
-<th>Identificerend</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>heeft tijdlijn geldigheid</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>heeft tijdlijn registratie</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>Kardinaliteit</th>
-<td>0..1</td>
-</tr>
-<tr>
-<th>Kardinaliteit relatie bron</th>
-<td>0..*</td>
-</tr>
-<tr>
-<th>Authentiek</th>
-<td>Overig</td>
-</tr>
-<tr>
-<th>Indicatie afleidbaar</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>Mogelijk geen waarde</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>Bron</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie">Registratie</a>
-</td>
-</tr>
-<tbody>
-</tbody>
-</table>
-</section>
 <section class="notoc" id="informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_verantwoordelijke_partij">
 <h6>verantwoordelijkePartij</h6>
 <table style="width: 100%">
@@ -3705,6 +3634,77 @@ Een verantwoordelijke partij is een actor die verantwoordelijk is voor het objec
 <tr>
 <th>Kardinaliteit</th>
 <td>1</td>
+</tr>
+<tr>
+<th>Kardinaliteit relatie bron</th>
+<td>0..*</td>
+</tr>
+<tr>
+<th>Authentiek</th>
+<td>Overig</td>
+</tr>
+<tr>
+<th>Indicatie afleidbaar</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Mogelijk geen waarde</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Bron</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie">Registratie</a>
+</td>
+</tr>
+<tbody>
+</tbody>
+</table>
+</section>
+<section class="notoc" id="informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_afgeleid_van">
+<h6>afgeleidVan</h6>
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://www.w3.org/ns/prov#wasDerivedFrom</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>afgeleidVan</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>LGM-BG</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Een afleiding is een transformatie van een entiteit naar een andere, een update van een entiteit die resulteert in een nieuwe entiteit, of de constructie van een nieuwe entiteit op basis van een reeds bestaande entiteit.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>PROV-O</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2026-02-06</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>heeft tijdlijn geldigheid</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>heeft tijdlijn registratie</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>0..*</td>
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
@@ -3874,10 +3874,184 @@ Een verantwoordelijke partij is een actor die verantwoordelijk is voor het objec
 </table>
 </section>
 
+<section class="notoc">
+<h5>Overzicht attribuutsoorten</h5>    
+<table style="width: 100%">
+<colgroup style="width: 25%"></colgroup>
+<colgroup style="width: 50%"></colgroup>
+<colgroup style="width: 18%"></colgroup>
+<colgroup style="width: 7%"></colgroup>
+<tbody>
+<tr>
+  <th>Naam</th>
+  <th>Definitie</th>
+  <th>Type</th>
+  <th>Kard</th>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument_attribuutsoort_identificatie">identificatie</a>
+</td>
+<td>
+Identificatie van een entiteit.</td>
+<td>
+<a class="external-link" href="https://docs.geostandaarden.nl/mim/mim/#primitief-datatype-1"> CharacterString</a>
+</td>
+<td>
+1</td>
+</tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument_attribuutsoort_documentdatum">documentdatum</a>
+</td>
+<td>
+De datum van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een entiteit heeft plaatsgevonden.</td>
+<td>
+<a class="external-link" href="https://docs.geostandaarden.nl/mim/mim/#primitief-datatype-1"> Date</a>
+</td>
+<td>
+0..1</td>
+</tr>
+</tbody>
+</table>
+</section>
 
 
 
 
+<section class="notoc">
+<h5>Details attribuutsoorten</h5>
+<section class="notoc" id="informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument_attribuutsoort_identificatie">
+<h6>identificatie</h6>
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#identificatie</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>identificatie</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>LGM-BG</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Identificatie van een entiteit.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>LGM-BG</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2026-02-06</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>heeft tijdlijn geldigheid</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>heeft tijdlijn registratie</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>1</td>
+</tr>
+<tr>
+<th>Authentiek</th>
+<td>Overig</td>
+</tr>
+<tr>
+<th>Indicatie afleidbaar</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Indicatie classificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Mogelijk geen waarde</th>
+<td>Nee</td>
+</tr>
+<tbody>
+</tbody>
+</table>
+</section>
+<section class="notoc" id="informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument_attribuutsoort_documentdatum">
+<h6>documentdatum</h6>
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#documentdatum</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>documentdatum</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>LGM-BG</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>De datum van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een entiteit heeft plaatsgevonden.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>LGM-BG</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2026-02-06</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>heeft tijdlijn geldigheid</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>heeft tijdlijn registratie</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>0..1</td>
+</tr>
+<tr>
+<th>Authentiek</th>
+<td>Overig</td>
+</tr>
+<tr>
+<th>Indicatie afleidbaar</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Indicatie classificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Mogelijk geen waarde</th>
+<td>Nee</td>
+</tr>
+<tbody>
+</tbody>
+</table>
+</section>
+</section>
 
 
 
@@ -3940,17 +4114,12 @@ Een verantwoordelijke partij is een actor die verantwoordelijk is voor het objec
 <td>
 Actief</td>
 <td>
-Indicatie dat de objectregistratie actief is in de registratie.</td>
+Indicatie dat het informatieobject actief is in de registratie.</td>
 <tr>
 <td>
-Afgevoerd door synchronisatie</td>
+Afgevoerd</td>
 <td>
-Indicatie dat het informatieobject uit de registratie is afgevoerd door synchronisatie.</td>
-<tr>
-<td>
-Afgevoerd door intrekking</td>
-<td>
-Indicatie dat het informatieobject uit de registratie is afgevoerd door intrekking.</td>
+Indicatie dat het informatieobject uit de registratie is afgevoerd.</td>
 </tbody>
 </table>
 
@@ -3993,7 +4162,7 @@ Indicatie dat het informatieobject uit de registratie is afgevoerd door intrekki
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/overheidsorganisatie">http://begrippen.geostandaarden.nl/disgeo/id/begrip/overheidsorganisatie</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/overheidsorganisatie">http://begrippen.geostandaarden.nl/bg/id/begrip/overheidsorganisatie</a>
 </td>
 </tr>
 <tr>
@@ -4425,7 +4594,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/organisatiecode">http://begrippen.geostandaarden.nl/disgeo/id/begrip/organisatiecode</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/organisatiecode">http://begrippen.geostandaarden.nl/bg/id/begrip/organisatiecode</a>
 </td>
 </tr>
 <tr>
@@ -4434,7 +4603,7 @@ De organisatiecode.</td>
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Ja</td>
+<td>Nee</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -4507,7 +4676,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/regionaal_openbaar_lichaam">http://begrippen.geostandaarden.nl/disgeo/id/begrip/regionaal_openbaar_lichaam</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/regionaal_openbaar_lichaam">http://begrippen.geostandaarden.nl/bg/id/begrip/regionaal_openbaar_lichaam</a>
 </td>
 </tr>
 <tr>
@@ -4586,7 +4755,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/samenwerkingsorganisatie">http://begrippen.geostandaarden.nl/disgeo/id/begrip/samenwerkingsorganisatie</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/samenwerkingsorganisatie">http://begrippen.geostandaarden.nl/bg/id/begrip/samenwerkingsorganisatie</a>
 </td>
 </tr>
 <tr>
@@ -4669,7 +4838,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/openbaar_lichaam_uit_gemeenschappelijke_regeling">http://begrippen.geostandaarden.nl/disgeo/id/begrip/openbaar_lichaam_uit_gemeenschappelijke_regeling</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/openbaar_lichaam_uit_gemeenschappelijke_regeling">http://begrippen.geostandaarden.nl/bg/id/begrip/openbaar_lichaam_uit_gemeenschappelijke_regeling</a>
 </td>
 </tr>
 <tr>
@@ -4774,7 +4943,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/gemeente">http://begrippen.geostandaarden.nl/disgeo/id/begrip/gemeente</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/gemeente">http://begrippen.geostandaarden.nl/bg/id/begrip/gemeente</a>
 </td>
 </tr>
 <tr>
@@ -4853,7 +5022,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/provincie">http://begrippen.geostandaarden.nl/disgeo/id/begrip/provincie</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/provincie">http://begrippen.geostandaarden.nl/bg/id/begrip/provincie</a>
 </td>
 </tr>
 <tr>
@@ -4936,7 +5105,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/rijk">http://begrippen.geostandaarden.nl/disgeo/id/begrip/rijk</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/rijk">http://begrippen.geostandaarden.nl/bg/id/begrip/rijk</a>
 </td>
 </tr>
 <tr>
@@ -5015,7 +5184,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/waterschap">http://begrippen.geostandaarden.nl/disgeo/id/begrip/waterschap</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/waterschap">http://begrippen.geostandaarden.nl/bg/id/begrip/waterschap</a>
 </td>
 </tr>
 <tr>
@@ -5094,7 +5263,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/disgeo/id/begrip/veiligheidsregio">http://begrippen.geostandaarden.nl/disgeo/id/begrip/veiligheidsregio</a>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregio">http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregio</a>
 </td>
 </tr>
 <tr>
