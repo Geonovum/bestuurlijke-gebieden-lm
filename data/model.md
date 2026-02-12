@@ -4250,7 +4250,7 @@ De voorkeursnaam van de organisatie</td>
 <a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_excl_soort">officieleNaamExclSoort</a>
 </td>
 <td>
-De officiële naam van de organisatie zonder soortaanduiding, bijvoorbeeld ‘’s-Gravenhage’</td>
+De officiële naam van de organisatie zonder soortaanduiding, bijvoorbeeld &#39;&#39;s-Gravenhage&#39;</td>
 <td>
 <a class="external-link" href="https://docs.geostandaarden.nl/mim/mim/#primitief-datatype-1"> CharacterString</a>
 </td>
@@ -4443,7 +4443,7 @@ De organisatiecode.</td>
 </tr>
 <tr>
 <th>Definitie</th>
-<td>De officiële naam van de organisatie zonder soortaanduiding, bijvoorbeeld ‘’s-Gravenhage’</td>
+<td>De officiële naam van de organisatie zonder soortaanduiding, bijvoorbeeld &#39;&#39;s-Gravenhage&#39;</td>
 </tr>
 <tr>
 <th>Herkomst definitie</th>
@@ -4727,85 +4727,6 @@ De organisatiecode.</td>
 
 
 
-#### Samenwerkingsorganisatie {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_samenwerkingsorganisatie}
-
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tr>
-<th>Identificatie</th>
-<td>https://identifier.overheid.nl/tooi/def/ont/Samenwerkingsorganisatie</td>
-</tr>
-<tr>
-<th>Naam</th>
-<td>Samenwerkingsorganisatie</td>
-</tr>
-<tr>
-<th>Herkomst</th>
-<td>TOOI - Ontologie 1.6.2</td>
-</tr>
-<tr>
-<th>Definitie</th>
-<td>Een organisatie die in het leven is geroepen om een gemeenschappelijke regeling uit te voeren in een publiekrechtelijke of privaatrechtelijke constructie.</td>
-</tr>
-<tr>
-<th>Herkomst definitie</th>
-<td>TOOI - Ontologie 1.6.2</td>
-</tr>
-<tr>
-<th>Begrip</th>
-<td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/samenwerkingsorganisatie">http://begrippen.geostandaarden.nl/bg/id/begrip/samenwerkingsorganisatie</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2025-11-18</td>
-</tr>
-<tr>
-<th>Indicatie abstract object</th>
-<td>Ja</td>
-</tr>
-<tbody>
-</tbody>
-</table>
-
-<section class="notoc">
-<h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_samenwerkingsorganisatie">Samenwerkingsorganisatie</a>
-</td>
-</tr>
-<tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_overheidsorganisatie">Overheidsorganisatie</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2025-11-18</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-<tbody>
-</tbody>
-</table>
-</section>
-
-
-
-
-
-
-
 #### OpenbaarLichaamUitGemeenschappelijkeRegeling {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling}
 
 <table style="width: 100%">
@@ -4855,32 +4776,6 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling">OpenbaarLichaamUitGemeenschappelijkeRegeling</a>
-</td>
-</tr>
-<tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_samenwerkingsorganisatie">Samenwerkingsorganisatie</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2025-11-18</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-<tbody>
-</tbody>
-</table>
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>

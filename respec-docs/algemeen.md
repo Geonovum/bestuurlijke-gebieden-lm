@@ -1,14 +1,16 @@
 # Algemene uitgangspunten
 
+In dit hoofdstuk wordt onderscheid gemaakt tussen een *domeinobject* en een *gegevensobject*. Een domeinobject is een <a data-cite="MIM12#object">object</a> in de beschouwde werkelijkheid, zoals een gemeentegebied of een provinciegebied. Een gegevensobject is een set van gegevens die uitdrukkingen bevat over een domeinobject, zoals de naam, geometrie en levenscyclusstatus. Het gegevensobject komt overeen met wat in [[NEN3610-2022]] een *informatieobject* wordt genoemd. Over elk gegevensobject worden daarnaast registratiegegevens vastgelegd, zoals versie, tijdlijnen en herkomst, die het gegevensobject zelf als onderwerp hebben.
+
 ## Identificatie
 
-Aan elk <a data-cite="MIM12#object">object</a> wordt een unieke identificatie toegekend. Zolang het object bestaat, mag deze identificatie niet veranderen. De objectidentificatie moet uniek, betekenisloos, permanent en overal geldig (systeemonafhankelijk) zijn.
+Aan elk domeinobject wordt een unieke identificatie toegekend. Zolang het domeinobject bestaat, mag deze identificatie niet veranderen. De objectidentificatie moet uniek, betekenisloos, permanent en overal geldig (systeemonafhankelijk) zijn.
 
-Het LGM-BG volgt hier de richtlijnen van [[NEN3610-2022]]. De identificatie identificeert het object. Als men het over het object met een bepaalde identificatie heeft (of er naar verwijst) dan wil men zeker weten dat daadwerkelijk dat ene object wordt bedoeld en niet dat er meerdere objecten aangewezen worden.
+Het LGM-BG volgt hier de richtlijnen van [[NEN3610-2022]]. De identificatie identificeert het domeinobject. Als men het over het domeinobject met een bepaalde identificatie heeft (of er naar verwijst) dan wil men zeker weten dat daadwerkelijk dat ene domeinobject wordt bedoeld en niet dat er meerdere domeinobjecten aangewezen worden.
 
-Daarnaast is het van belang dat de identificatie betekenisloos is. Dit betekent dat de identificatie geen informatie mag bevatten over het object zelf, zoals bijvoorbeeld de locatie, de eigenaar of de tijd van ontstaan. Dit voorkomt dat de identificatie moet worden aangepast als deze informatie verandert.
+Daarnaast is het van belang dat de identificatie betekenisloos is. Dit betekent dat de identificatie geen informatie mag bevatten over het domeinobject zelf, zoals bijvoorbeeld de locatie, de eigenaar of de tijd van ontstaan. Dit voorkomt dat de identificatie moet worden aangepast als deze informatie verandert.
 
-Een identificatie is permanent en identificeert een object in de beschouwde werkelijkheid, onafhankelijk van de gegevens die erover verwerkt worden. Gedurende de gehele levenscyclus van een object blijft de identificatie gelijk. De identificatie van een object identificeert dus niet een versie van de gegevens over dat object. Voor het identificeren van een specifieke versie van de gegevens over een object wordt gebruik gemaakt van eigenschappen beschreven in [[[#domein-registratiegegevens]]].
+Een identificatie is permanent en identificeert een domeinobject in de beschouwde werkelijkheid, onafhankelijk van de gegevens die erover verwerkt worden. Gedurende de gehele levenscyclus van een domeinobject blijft de identificatie gelijk. De identificatie van een domeinobject identificeert dus niet een gegevensobject of een versie daarvan. Voor het identificeren van een specifieke versie van de gegevens over een domeinobject wordt gebruik gemaakt van eigenschappen beschreven in [[[#domein-registratiegegevens]]].
 
 ### Identificatie en Domein (namespace) attributen
 
@@ -23,14 +25,14 @@ Een domein attribuut heeft als datatype een URI. De URI verwijst naar de context
 
 ## Levenscyclus
 
-Objecttypen in het LGM-BG kunnen een levenscyclusstatus toegekend krijgen. Hiermee wordt het mogelijk om aan te geven in welke fase een object verkeert. De levenscyclus begint op het gedefinieerde ontstaansmoment en eindigt wanneer een object niet meer bestaat in de werkelijkheid.
+Objecttypen in het LGM-BG kunnen een levenscyclusstatus toegekend krijgen. Hiermee wordt het mogelijk om aan te geven in welke fase een domeinobject verkeert. De levenscyclus begint op het gedefinieerde ontstaansmoment en eindigt wanneer een domeinobject niet meer bestaat in de werkelijkheid. De levenscyclusstatus is een eigenschap van het domeinobject, niet van het gegevensobject.
 
 Het [[CIM-BG]] onderscheidt vier levenscyclusstatussen voor registratieve ruimten: `Ontwerp`, `Niet gerealiseerd`, `Vastgesteld` en `Ingetrokken`. Zie het [[CIM-BG]] voor een [uitgebreide beschrijving van de levenscyclus](https://geonovum.github.io/bestuurlijke-gebieden-cm/#levenscyclus).
 
 In het LGM-BG wordt een beperktere set statussen gehanteerd. Er worden alleen de volgende statussen ondersteund:
 
-- `Vastgesteld` — Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving
-- `Ingetrokken` — Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving
+- `Vastgesteld`: Domeinobject dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving
+- `Ingetrokken`: Domeinobject dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving
 
 De statussen `Ontwerp` en `Niet gerealiseerd` worden in dit logisch model niet ondersteund. Er zijn momenteel geen bronnen ingericht om deze statussen te vullen en de informatiebehoefte hiervoor is nog niet in kaart gebracht. In een toekomstige versie van het model kunnen deze statussen worden toegevoegd wanneer daar behoefte aan ontstaat.
 
@@ -38,7 +40,7 @@ De statussen `Ontwerp` en `Niet gerealiseerd` worden in dit logisch model niet o
 
 Voor de representatie van de locatie en vorm van bestuurlijke gebieden worden in dit model geometrieën gebruikt. Het [[CIM-BG]] beschrijft uitgebreid de [uitgangspunten voor geometrie](https://geonovum.github.io/bestuurlijke-gebieden-cm/#geometrie), waaronder geometrietypen, dimensies en ruimtelijke relaties. Deze uitgangspunten zijn ook van toepassing op het LGM-BG.
 
-Bestuurlijke gebieden worden tweedimensionaal vastgelegd. In het logisch model is het geometrietype voor bestuurlijke gebieden gedefinieerd als `VlakOfMultivlak`: een keuze tussen `GM_Surface` (vlak) of `GM_MultiSurface` (multivlak). Dit zijn geometrietypen uit [[ISO-19107-2019]], conform de [[ISO-19125]] Simple Features standaard.
+Bestuurlijke gebieden worden tweedimensionaal vastgelegd. 3D- of 2.5D-geometrieën worden in dit model niet gebruikt. In het logisch model is het geometrietype voor bestuurlijke gebieden gedefinieerd als `VlakOfMultivlak`: een keuze tussen `GM_Surface` (vlak) of `GM_MultiSurface` (multivlak). Dit zijn tweedimensionale geometrietypen uit [[ISO-19107-2019]], conform de [[ISO-19125]] Simple Features standaard.
 
 Het model hanteert uitsluitend expliciete geometrie en lineaire interpolatie; bogen zijn niet toegestaan. Zie [[GIMEG]] voor een uitgebreidere toelichting op de toepassing van ISO 19107-geometrietypen.
 
@@ -78,9 +80,7 @@ Hierbij is de OGC-code CRS84 de longitude-latitude-variant van de 2D WGS 84-real
 
 ## Registratiegegevens
 
-In de BVBG worden gegevens geregistreerd over bestuurlijke gebieden. Voor het goed kunnen beheren en gebruiken van deze gegevens is het van belang dat er registratiegegevens worden vastgelegd over de wijze waarop de gegevens zijn geregistreerd.
-
-Voor elk object in het LGM-BG worden de volgende registratiegegevens vastgelegd:
+In de BVBG worden gegevens geregistreerd over bestuurlijke gebieden. Voor elk domeinobject worden gegevensobjecten vastgelegd die de eigenschappen van dat domeinobject beschrijven. Over elk gegevensobject worden daarnaast registratiegegevens bijgehouden die het gegevensobject zelf als onderwerp hebben. De volgende registratiegegevens worden per gegevensobject vastgelegd:
 
 - Registratiestatus
 - Versie
@@ -92,13 +92,13 @@ Deze registratiegegevens zijn afgeleid van de registratiegegevens zoals beschrev
 
 ### Versie, tijdlijn geldigheid en tijdlijn registratie
 
-In de levenscyclus van objecten kunnen kenmerken veranderen. Om deze veranderingen te kunnen vastleggen en raadplegen, worden versies van gegevens over deze objecten bijgehouden. Iedere versie van de gegevens over een object wordt beschreven door een [[NEN3610-2022]] Registratie-object. Een registratie-object heeft een versie en eigenschappen die de geldigheidstijdlijn en registratietijdlijn beschrijven.
+In de levenscyclus van domeinobjecten kunnen kenmerken veranderen. Om deze veranderingen te kunnen vastleggen en raadplegen, worden opeenvolgende gegevensobjecten over dat domeinobject bijgehouden. Iedere versie van de gegevens over een domeinobject wordt vastgelegd als gegevensobject, beschreven door een [[NEN3610-2022]] Registratie-object. Over elk gegevensobject worden registratiegegevens vastgelegd, waaronder een versie en eigenschappen die de geldigheidstijdlijn en registratietijdlijn beschrijven.
 
-De **geldigheidstijdlijn** beschrijft de periode waarin een object in de beschouwde werkelijkheid bestaat of geldig is. Hiervoor worden de eigenschappen `beginGeldigheid` en `eindGeldigheid` gebruikt.
+De **geldigheidstijdlijn** beschrijft de periode waarin een domeinobject in de beschouwde werkelijkheid bestaat of geldig is. Hiervoor worden de eigenschappen `beginGeldigheid` en `eindGeldigheid` gebruikt.
 
-De **registratietijdlijn** beschrijft de periode waarin een versie van de gegevens over een object in de registratie bestaat. Hiervoor worden de eigenschappen `tijdstipRegistratie` en `eindRegistratie` gebruikt.
+De **registratietijdlijn** beschrijft de periode waarin een gegevensobject in de registratie bestaat. Hiervoor worden de eigenschappen `tijdstipRegistratie` en `eindRegistratie` gebruikt.
 
-Een object heeft gedurende zijn levenscyclus op ieder moment in de gecombineerde tijdlijn geldigheid en registratie minimaal één registratie.
+Een domeinobject heeft gedurende zijn levenscyclus op ieder moment in de gecombineerde tijdlijn geldigheid en registratie minimaal één gegevensobject.
 
 <figure>
   <img src="data/media/registratiegegevens.png" alt="NEN 3610 Registratiegegevens">
@@ -116,21 +116,21 @@ Bij een gemeentelijke herindeling wordt de nieuwe gemeentegrens vastgesteld door
 
 ### Registratiestatus en afgevoerde registraties
 
-Een object kan op ieder moment in de gecombineerde tijdlijn geldigheid en registratie een of meerdere gegevensregistraties kennen. Een gegevensregistratie heeft een registratiestatus. De registratiestatus geeft aan of de gegevensregistratie actief is, of dat het een afgevoerde registratie betreft:
+Een domeinobject kan op ieder moment in de gecombineerde tijdlijn geldigheid en registratie een of meerdere gegevensobjecten kennen. Elk gegevensobject heeft een registratiestatus. De registratiestatus geeft aan of het gegevensobject actief is, of dat het een afgevoerd gegevensobject betreft:
 
-- `Actief` — De gegevensregistratie is actueel in de registratie.
-- `Afgevoerd` — De gegevensregistratie is niet meer actief, maar blijft bewaard voor formeel-historische doeleinden.
+- `Actief`: Het gegevensobject is actueel in de registratie.
+- `Afgevoerd`: Het gegevensobject is niet meer actief, maar blijft bewaard in de tijdlijn registratie.
 
-Er mag maar één gegevensregistratie zijn met de registratiestatus `Actief` op een bepaald moment in de gecombineerde tijdlijn geldigheid en registratie.
+Er mag maar één gegevensobject zijn met de registratiestatus `Actief` op een bepaald moment in de gecombineerde tijdlijn geldigheid en registratie.
 
 ### Herkomst en bronverwijzing
 
-Voor elke objectregistratie wordt opgenomen waar de gegevens vandaan komen en hoe deze tot stand zijn gekomen. Dit gebeurt door het registreren van herkomst- en bronverwijzingen. De herkomst maakt het mogelijk om de oorspronkelijke bronhouder en het gebruikte brondocument te identificeren.
+Voor elk gegevensobject wordt opgenomen waar de gegevens vandaan komen en hoe deze tot stand zijn gekomen. Dit gebeurt door het registreren van herkomst- en bronverwijzingen. De herkomst maakt het mogelijk om de oorspronkelijke bronhouder en het gebruikte brondocument te identificeren.
 
-Het herkomstmodel in het LGM-BG is gebaseerd op de W3C standaard [[PROV-O]]. Door aansluiting op PROV-O is het mogelijk om op een gestandaardiseerde en interoperabele manier de herkomst en bronverwijzingen van objecten te registreren en te interpreteren. In het model is de minimale set van herkomst- en bronverwijzingen opgenomen:
+Het herkomstmodel in het LGM-BG is gebaseerd op de W3C standaard [[PROV-O]]. Door aansluiting op PROV-O is het mogelijk om op een gestandaardiseerde en interoperabele manier de herkomst en bronverwijzingen van gegevensobjecten te registreren en te interpreteren. In het model is de minimale set van herkomst- en bronverwijzingen opgenomen:
 
-- `afgeleidVan` — Een verwijzing naar de bronentiteit (bijvoorbeeld een brondocument) op basis waarvan de registratie tot stand is gekomen.
-- `verantwoordelijkePartij` — De actor die verantwoordelijk is voor de gegevens over het object.
+- `afgeleidVan`: Een verwijzing naar de bronentiteit (bijvoorbeeld een brondocument) op basis waarvan het gegevensobject tot stand is gekomen.
+- `verantwoordelijkePartij`: De actor die verantwoordelijk is voor de gegevens over het domeinobject.
 
 ## Afleidbare eigenschappen
 
