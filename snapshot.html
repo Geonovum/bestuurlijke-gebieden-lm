@@ -1442,7 +1442,7 @@ img.license{float:left;padding-right:5px;background:0 0}
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2026-02-09">09 februari 2026</time>
+      <time class="dt-published" datetime="2026-02-12">12 februari 2026</time>
     </h2>
     <dl>
       
@@ -1485,7 +1485,7 @@ img.license{float:left;padding-right:5px;background:0 0}
 <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Bestuurlijke gebieden zijn die gebieden waarbinnen het Rijk, gemeenten, provincies, waterschappen en samenwerkingsverbanden zoals veiligheidsregio's bestuurlijke verantwoordelijkheid uitoefenen. Ook de maritieme zones (territoriale zee, aansluitende zone, exclusieve economische zone en continentaal plat) behoren hiertoe.</p>
 <p>Dit document beschrijft het logisch gegevensmodel voor bestuurlijke gebieden (LGM-BG). Het is een uitwerking van het conceptueel informatiemodel [<cite><a class="bibref" data-link-type="biblio" href="#bib-cim-bg" title="Conceptueel Informatiemodel Bestuurlijke Gebieden">CIM-BG</a></cite>] en beschrijft de gegevens die nodig zijn om bestuurlijke gebieden te registreren en uit te wisselen. Het model specificeert onder meer de identificatie van objecten, het bitemporale historiemodel, de ondersteunde coördinaatreferentiesystemen en de registratiegegevens.</p>
 </section>
-<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#doel"><bdi class="secno">1.1 </bdi>Doel</a></li><li class="tocline"><a class="tocxref" href="#aansluiting-op-het-conceptueel-model-cim-bg"><bdi class="secno">1.2 </bdi>Aansluiting op het conceptueel model CIM-BG</a></li><li class="tocline"><a class="tocxref" href="#aansluiting-op-nen-3610"><bdi class="secno">1.3 </bdi>Aansluiting op NEN 3610</a></li><li class="tocline"><a class="tocxref" href="#scope"><bdi class="secno">1.4 </bdi>Scope</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.5 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#algemene-uitgangspunten"><bdi class="secno">2. </bdi>Algemene uitgangspunten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#identificatie"><bdi class="secno">2.1 </bdi>Identificatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#identificatie-en-domein-namespace-attributen"><bdi class="secno">2.1.1 </bdi>Identificatie en Domein (namespace) attributen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#levenscyclus"><bdi class="secno">2.2 </bdi>Levenscyclus</a></li><li class="tocline"><a class="tocxref" href="#geometrie"><bdi class="secno">2.3 </bdi>Geometrie</a></li><li class="tocline"><a class="tocxref" href="#coordinaatreferentiesystemen"><bdi class="secno">2.4 </bdi>Coördinaatreferentiesystemen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanlevering"><bdi class="secno">2.4.1 </bdi>Aanlevering</a></li><li class="tocline"><a class="tocxref" href="#uitlevering"><bdi class="secno">2.4.2 </bdi>Uitlevering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#registratiegegevens"><bdi class="secno">2.5 </bdi>Registratiegegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#versie-tijdlijn-geldigheid-en-tijdlijn-registratie"><bdi class="secno">2.5.1 </bdi>Versie, tijdlijn geldigheid en tijdlijn registratie</a></li><li class="tocline"><a class="tocxref" href="#registratiestatus-en-afgevoerde-registraties"><bdi class="secno">2.5.2 </bdi>Registratiestatus en afgevoerde registraties</a></li><li class="tocline"><a class="tocxref" href="#herkomst-en-bronverwijzing"><bdi class="secno">2.5.3 </bdi>Herkomst en bronverwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#afleidbare-eigenschappen"><bdi class="secno">2.6 </bdi>Afleidbare eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#modelleerregels"><bdi class="secno">2.7 </bdi>Modelleerregels</a></li></ol></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">3. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#naam-en-acroniemen"><bdi class="secno">3.1 </bdi>Naam en Acroniemen</a></li><li class="tocline"><a class="tocxref" href="#definitie"><bdi class="secno">3.2 </bdi>Definitie</a></li><li class="tocline"><a class="tocxref" href="#beschrijving"><bdi class="secno">3.3 </bdi>Beschrijving</a></li><li class="tocline"><a class="tocxref" href="#inhoud-van-het-model"><bdi class="secno">3.4 </bdi>Inhoud van het model</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bestuurlijke-gebieden"><bdi class="secno">3.4.1 </bdi>Bestuurlijke gebieden</a></li><li class="tocline"><a class="tocxref" href="#registratiegegevens-0"><bdi class="secno">3.4.2 </bdi>Registratiegegevens</a></li><li class="tocline"><a class="tocxref" href="#externe-modellen"><bdi class="secno">3.4.3 </bdi>Externe modellen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#extern-nen-3610"><bdi class="secno">3.4.3.1 </bdi>Extern NEN 3610</a></li><li class="tocline"><a class="tocxref" href="#view-tooi"><bdi class="secno">3.4.3.2 </bdi>View TOOI</a></li><li class="tocline"><a class="tocxref" href="#view-prov-o"><bdi class="secno">3.4.3.3 </bdi>View PROV-O</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#bronnen-en-afnemers"><bdi class="secno">3.5 </bdi>Bronnen en afnemers</a></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">3.6 </bdi>Standaarden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#informatiemodel-logisch-model-bestuurlijke-gebieden"><bdi class="secno">4. </bdi>Informatiemodel Logisch model Bestuurlijke gebieden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#domein-bestuurlijk-gebied"><bdi class="secno">4.1 </bdi>Domein Bestuurlijk gebied</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">4.1.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte"><bdi class="secno">4.1.1.1 </bdi>RegistratieveRuimte</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied"><bdi class="secno">4.1.1.2 </bdi>BestuurlijkGebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_maritieme_zone"><bdi class="secno">4.1.1.3 </bdi>MaritiemeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_gemeentegebied"><bdi class="secno">4.1.1.4 </bdi>Gemeentegebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_provinciegebied"><bdi class="secno">4.1.1.5 </bdi>Provinciegebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_landgebied"><bdi class="secno">4.1.1.6 </bdi>Landgebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_waterschapsgebied"><bdi class="secno">4.1.1.7 </bdi>Waterschapsgebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied"><bdi class="secno">4.1.1.8 </bdi>Veiligheidsregiogebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_territoriale_zee"><bdi class="secno">4.1.1.9 </bdi>TerritorialeZee</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_aansluitende_zone"><bdi class="secno">4.1.1.10 </bdi>AansluitendeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone"><bdi class="secno">4.1.1.11 </bdi>ExclusieveEconomischeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_continentaal_plat"><bdi class="secno">4.1.1.12 </bdi>ContinentaalPlat</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuzen-tussen-datatypen"><bdi class="secno">4.1.2 </bdi>Keuzen tussen datatypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak"><bdi class="secno">4.1.2.1 </bdi>VlakOfMultivlak</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties"><bdi class="secno">4.1.3 </bdi>Enumeraties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte"><bdi class="secno">4.1.3.1 </bdi>StatusRegistratieveRuimte</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#domein-registratiegegevens"><bdi class="secno">4.2 </bdi>Domein Registratiegegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-0"><bdi class="secno">4.2.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie"><bdi class="secno">4.2.1.1 </bdi>Registratie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit"><bdi class="secno">4.2.1.2 </bdi>Bronentiteit</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument"><bdi class="secno">4.2.1.3 </bdi>Brondocument</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties-0"><bdi class="secno">4.2.2 </bdi>Enumeraties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_registratiegegevens_enumeratie_status_registratie"><bdi class="secno">4.2.2.1 </bdi>StatusRegistratie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#view-tooi-thesaurus-en-ontologie-overheidsinformatie"><bdi class="secno">4.3 </bdi>View TOOI - Thesaurus en Ontologie Overheidsinformatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-1"><bdi class="secno">4.3.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_overheidsorganisatie"><bdi class="secno">4.3.1.1 </bdi>Overheidsorganisatie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_regionaal_openbaar_lichaam"><bdi class="secno">4.3.1.2 </bdi>RegionaalOpenbaarLichaam</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_samenwerkingsorganisatie"><bdi class="secno">4.3.1.3 </bdi>Samenwerkingsorganisatie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling"><bdi class="secno">4.3.1.4 </bdi>OpenbaarLichaamUitGemeenschappelijkeRegeling</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_gemeente"><bdi class="secno">4.3.1.5 </bdi>Gemeente</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_provincie"><bdi class="secno">4.3.1.6 </bdi>Provincie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk"><bdi class="secno">4.3.1.7 </bdi>Rijk</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_waterschap"><bdi class="secno">4.3.1.8 </bdi>Waterschap</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_veiligheidsregio"><bdi class="secno">4.3.1.9 </bdi>Veiligheidsregio</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#view-prov-o-0"><bdi class="secno">4.4 </bdi>View PROV-O</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-2"><bdi class="secno">4.4.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_entiteit"><bdi class="secno">4.4.1.1 </bdi>Entiteit</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_actor"><bdi class="secno">4.4.1.2 </bdi>Actor</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_organisatie"><bdi class="secno">4.4.1.3 </bdi>Organisatie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#extern-nen-3610-2022-basismodel-geo-informatie"><bdi class="secno">4.5 </bdi>Extern NEN 3610:2022 - Basismodel geo-informatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-3"><bdi class="secno">4.5.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_geo_object"><bdi class="secno">4.5.1.1 </bdi>GeoObject</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_virtuele_ruimte"><bdi class="secno">4.5.1.2 </bdi>VirtueleRuimte</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_registratieve_ruimte"><bdi class="secno">4.5.1.3 </bdi>RegistratieveRuimte</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">6. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+<section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#doel"><bdi class="secno">1.1 </bdi>Doel</a></li><li class="tocline"><a class="tocxref" href="#aansluiting-op-het-conceptueel-model-cim-bg"><bdi class="secno">1.2 </bdi>Aansluiting op het conceptueel model CIM-BG</a></li><li class="tocline"><a class="tocxref" href="#aansluiting-op-nen-3610"><bdi class="secno">1.3 </bdi>Aansluiting op NEN 3610</a></li><li class="tocline"><a class="tocxref" href="#scope"><bdi class="secno">1.4 </bdi>Scope</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.5 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#algemene-uitgangspunten"><bdi class="secno">2. </bdi>Algemene uitgangspunten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#identificatie"><bdi class="secno">2.1 </bdi>Identificatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#identificatie-en-domein-namespace-attributen"><bdi class="secno">2.1.1 </bdi>Identificatie en Domein (namespace) attributen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#levenscyclus"><bdi class="secno">2.2 </bdi>Levenscyclus</a></li><li class="tocline"><a class="tocxref" href="#geometrie"><bdi class="secno">2.3 </bdi>Geometrie</a></li><li class="tocline"><a class="tocxref" href="#coordinaatreferentiesystemen"><bdi class="secno">2.4 </bdi>Coördinaatreferentiesystemen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanlevering"><bdi class="secno">2.4.1 </bdi>Aanlevering</a></li><li class="tocline"><a class="tocxref" href="#uitlevering"><bdi class="secno">2.4.2 </bdi>Uitlevering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#registratiegegevens"><bdi class="secno">2.5 </bdi>Registratiegegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#versie-tijdlijn-geldigheid-en-tijdlijn-registratie"><bdi class="secno">2.5.1 </bdi>Versie, tijdlijn geldigheid en tijdlijn registratie</a></li><li class="tocline"><a class="tocxref" href="#registratiestatus-en-afgevoerde-registraties"><bdi class="secno">2.5.2 </bdi>Registratiestatus en afgevoerde registraties</a></li><li class="tocline"><a class="tocxref" href="#herkomst-en-bronverwijzing"><bdi class="secno">2.5.3 </bdi>Herkomst en bronverwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#afleidbare-eigenschappen"><bdi class="secno">2.6 </bdi>Afleidbare eigenschappen</a></li><li class="tocline"><a class="tocxref" href="#modelleerregels"><bdi class="secno">2.7 </bdi>Modelleerregels</a></li></ol></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">3. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#naam-en-acroniemen"><bdi class="secno">3.1 </bdi>Naam en Acroniemen</a></li><li class="tocline"><a class="tocxref" href="#definitie"><bdi class="secno">3.2 </bdi>Definitie</a></li><li class="tocline"><a class="tocxref" href="#beschrijving"><bdi class="secno">3.3 </bdi>Beschrijving</a></li><li class="tocline"><a class="tocxref" href="#inhoud-van-het-model"><bdi class="secno">3.4 </bdi>Inhoud van het model</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bestuurlijke-gebieden"><bdi class="secno">3.4.1 </bdi>Bestuurlijke gebieden</a></li><li class="tocline"><a class="tocxref" href="#registratiegegevens-0"><bdi class="secno">3.4.2 </bdi>Registratiegegevens</a></li><li class="tocline"><a class="tocxref" href="#externe-modellen"><bdi class="secno">3.4.3 </bdi>Externe modellen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#extern-nen-3610"><bdi class="secno">3.4.3.1 </bdi>Extern NEN 3610</a></li><li class="tocline"><a class="tocxref" href="#view-tooi"><bdi class="secno">3.4.3.2 </bdi>View TOOI</a></li><li class="tocline"><a class="tocxref" href="#view-prov-o"><bdi class="secno">3.4.3.3 </bdi>View PROV-O</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#bronnen-en-afnemers"><bdi class="secno">3.5 </bdi>Bronnen en afnemers</a></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">3.6 </bdi>Standaarden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#informatiemodel-logisch-model-bestuurlijke-gebieden"><bdi class="secno">4. </bdi>Informatiemodel Logisch model Bestuurlijke gebieden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#domein-bestuurlijk-gebied"><bdi class="secno">4.1 </bdi>Domein Bestuurlijk gebied</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">4.1.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte"><bdi class="secno">4.1.1.1 </bdi>RegistratieveRuimte</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied"><bdi class="secno">4.1.1.2 </bdi>BestuurlijkGebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_maritieme_zone"><bdi class="secno">4.1.1.3 </bdi>MaritiemeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_gemeentegebied"><bdi class="secno">4.1.1.4 </bdi>Gemeentegebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_provinciegebied"><bdi class="secno">4.1.1.5 </bdi>Provinciegebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_landgebied"><bdi class="secno">4.1.1.6 </bdi>Landgebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_waterschapsgebied"><bdi class="secno">4.1.1.7 </bdi>Waterschapsgebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied"><bdi class="secno">4.1.1.8 </bdi>Veiligheidsregiogebied</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_territoriale_zee"><bdi class="secno">4.1.1.9 </bdi>TerritorialeZee</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_aansluitende_zone"><bdi class="secno">4.1.1.10 </bdi>AansluitendeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone"><bdi class="secno">4.1.1.11 </bdi>ExclusieveEconomischeZone</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_continentaal_plat"><bdi class="secno">4.1.1.12 </bdi>ContinentaalPlat</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuzen-tussen-datatypen"><bdi class="secno">4.1.2 </bdi>Keuzen tussen datatypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak"><bdi class="secno">4.1.2.1 </bdi>VlakOfMultivlak</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties"><bdi class="secno">4.1.3 </bdi>Enumeraties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte"><bdi class="secno">4.1.3.1 </bdi>StatusRegistratieveRuimte</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#domein-registratiegegevens"><bdi class="secno">4.2 </bdi>Domein Registratiegegevens</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-0"><bdi class="secno">4.2.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie"><bdi class="secno">4.2.1.1 </bdi>Registratie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit"><bdi class="secno">4.2.1.2 </bdi>Bronentiteit</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument"><bdi class="secno">4.2.1.3 </bdi>Brondocument</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties-0"><bdi class="secno">4.2.2 </bdi>Enumeraties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_domein_registratiegegevens_enumeratie_status_registratie"><bdi class="secno">4.2.2.1 </bdi>StatusRegistratie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#view-tooi-thesaurus-en-ontologie-overheidsinformatie"><bdi class="secno">4.3 </bdi>View TOOI - Thesaurus en Ontologie Overheidsinformatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-1"><bdi class="secno">4.3.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_overheidsorganisatie"><bdi class="secno">4.3.1.1 </bdi>Overheidsorganisatie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_regionaal_openbaar_lichaam"><bdi class="secno">4.3.1.2 </bdi>RegionaalOpenbaarLichaam</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling"><bdi class="secno">4.3.1.3 </bdi>OpenbaarLichaamUitGemeenschappelijkeRegeling</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_gemeente"><bdi class="secno">4.3.1.4 </bdi>Gemeente</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_provincie"><bdi class="secno">4.3.1.5 </bdi>Provincie</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk"><bdi class="secno">4.3.1.6 </bdi>Rijk</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_waterschap"><bdi class="secno">4.3.1.7 </bdi>Waterschap</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_veiligheidsregio"><bdi class="secno">4.3.1.8 </bdi>Veiligheidsregio</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#view-prov-o-0"><bdi class="secno">4.4 </bdi>View PROV-O</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-2"><bdi class="secno">4.4.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_entiteit"><bdi class="secno">4.4.1.1 </bdi>Entiteit</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_actor"><bdi class="secno">4.4.1.2 </bdi>Actor</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_organisatie"><bdi class="secno">4.4.1.3 </bdi>Organisatie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#extern-nen-3610-2022-basismodel-geo-informatie"><bdi class="secno">4.5 </bdi>Extern NEN 3610:2022 - Basismodel geo-informatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttypen-3"><bdi class="secno">4.5.1 </bdi>Objecttypen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_geo_object"><bdi class="secno">4.5.1.1 </bdi>GeoObject</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_virtuele_ruimte"><bdi class="secno">4.5.1.2 </bdi>VirtueleRuimte</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_registratieve_ruimte"><bdi class="secno">4.5.1.3 </bdi>RegistratieveRuimte</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">6. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
 
 
 <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
@@ -1528,11 +1528,12 @@ img.license{float:left;padding-right:5px;background:0 0}
 </ul>
 </section></section>
 <section id="algemene-uitgangspunten"><div class="header-wrapper"><h2 id="x2-algemene-uitgangspunten"><bdi class="secno">2. </bdi>Algemene uitgangspunten</h2><a class="self-link" href="#algemene-uitgangspunten" aria-label="Permalink for Section 2."></a></div>
+<p>In dit hoofdstuk wordt onderscheid gemaakt tussen een <em>domeinobject</em> en een <em>gegevensobject</em>. Een domeinobject is een <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/#object">object</a> in de beschouwde werkelijkheid, zoals een gemeentegebied of een provinciegebied. Een gegevensobject is een set van gegevens die uitdrukkingen bevat over een domeinobject, zoals de naam, geometrie en levenscyclusstatus. Het gegevensobject komt overeen met wat in [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen3610-2022" title="NEN-3610 Basismodel geo-informatie">NEN3610-2022</a></cite>] een <em>informatieobject</em> wordt genoemd. Over elk gegevensobject worden daarnaast registratiegegevens vastgelegd, zoals versie, tijdlijnen en herkomst, die het gegevensobject zelf als onderwerp hebben.</p>
 <section id="identificatie"><div class="header-wrapper"><h3 id="x2-1-identificatie"><bdi class="secno">2.1 </bdi>Identificatie</h3><a class="self-link" href="#identificatie" aria-label="Permalink for Section 2.1"></a></div>
-<p>Aan elk <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20240613/#object">object</a> wordt een unieke identificatie toegekend. Zolang het object bestaat, mag deze identificatie niet veranderen. De objectidentificatie moet uniek, betekenisloos, permanent en overal geldig (systeemonafhankelijk) zijn.</p>
-<p>Het LGM-BG volgt hier de richtlijnen van [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen3610-2022" title="NEN-3610 Basismodel geo-informatie">NEN3610-2022</a></cite>]. De identificatie identificeert het object. Als men het over het object met een bepaalde identificatie heeft (of er naar verwijst) dan wil men zeker weten dat daadwerkelijk dat ene object wordt bedoeld en niet dat er meerdere objecten aangewezen worden.</p>
-<p>Daarnaast is het van belang dat de identificatie betekenisloos is. Dit betekent dat de identificatie geen informatie mag bevatten over het object zelf, zoals bijvoorbeeld de locatie, de eigenaar of de tijd van ontstaan. Dit voorkomt dat de identificatie moet worden aangepast als deze informatie verandert.</p>
-<p>Een identificatie is permanent en identificeert een object in de beschouwde werkelijkheid, onafhankelijk van de gegevens die erover verwerkt worden. Gedurende de gehele levenscyclus van een object blijft de identificatie gelijk. De identificatie van een object identificeert dus niet een versie van de gegevens over dat object. Voor het identificeren van een specifieke versie van de gegevens over een object wordt gebruik gemaakt van eigenschappen beschreven in <a href="#domein-registratiegegevens" data-matched-text="[[[#domein-registratiegegevens]]]" class="sec-ref"><bdi class="secno">4.2 </bdi>Domein Registratiegegevens</a>.</p>
+<p>Aan elk domeinobject wordt een unieke identificatie toegekend. Zolang het domeinobject bestaat, mag deze identificatie niet veranderen. De objectidentificatie moet uniek, betekenisloos, permanent en overal geldig (systeemonafhankelijk) zijn.</p>
+<p>Het LGM-BG volgt hier de richtlijnen van [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen3610-2022" title="NEN-3610 Basismodel geo-informatie">NEN3610-2022</a></cite>]. De identificatie identificeert het domeinobject. Als men het over het domeinobject met een bepaalde identificatie heeft (of er naar verwijst) dan wil men zeker weten dat daadwerkelijk dat ene domeinobject wordt bedoeld en niet dat er meerdere domeinobjecten aangewezen worden.</p>
+<p>Daarnaast is het van belang dat de identificatie betekenisloos is. Dit betekent dat de identificatie geen informatie mag bevatten over het domeinobject zelf, zoals bijvoorbeeld de locatie, de eigenaar of de tijd van ontstaan. Dit voorkomt dat de identificatie moet worden aangepast als deze informatie verandert.</p>
+<p>Een identificatie is permanent en identificeert een domeinobject in de beschouwde werkelijkheid, onafhankelijk van de gegevens die erover verwerkt worden. Gedurende de gehele levenscyclus van een domeinobject blijft de identificatie gelijk. De identificatie van een domeinobject identificeert dus niet een gegevensobject of een versie daarvan. Voor het identificeren van een specifieke versie van de gegevens over een domeinobject wordt gebruik gemaakt van eigenschappen beschreven in <a href="#domein-registratiegegevens" data-matched-text="[[[#domein-registratiegegevens]]]" class="sec-ref"><bdi class="secno">4.2 </bdi>Domein Registratiegegevens</a>.</p>
 <section id="identificatie-en-domein-namespace-attributen"><div class="header-wrapper"><h4 id="x2-1-1-identificatie-en-domein-namespace-attributen"><bdi class="secno">2.1.1 </bdi>Identificatie en Domein (namespace) attributen</h4><a class="self-link" href="#identificatie-en-domein-namespace-attributen" aria-label="Permalink for Section 2.1.1"></a></div>
 <p>In [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen3610-2022" title="NEN-3610 Basismodel geo-informatie">NEN3610-2022</a></cite>] wordt beschreven dat de identificatie uniek moet zijn binnen een bepaald domein. Dit betekent dat de identificatie alleen uniek is binnen een bepaalde context, zoals een organisatie of een systeem. Om ervoor te zorgen dat de identificatie overal uniek is, wordt er gebruik gemaakt van een domein attribuut.</p>
 <p>Een domein attribuut heeft als datatype een URI. De URI verwijst naar de context waarin de identificatie uniek is. Door het domein attribuut te combineren met de identificatie, wordt ervoor gezorgd dat de identificatie overal uniek is.</p>
@@ -1542,17 +1543,17 @@ img.license{float:left;padding-right:5px;background:0 0}
 </figure>
 
 </section></section><section id="levenscyclus"><div class="header-wrapper"><h3 id="x2-2-levenscyclus"><bdi class="secno">2.2 </bdi>Levenscyclus</h3><a class="self-link" href="#levenscyclus" aria-label="Permalink for Section 2.2"></a></div>
-<p>Objecttypen in het LGM-BG kunnen een levenscyclusstatus toegekend krijgen. Hiermee wordt het mogelijk om aan te geven in welke fase een object verkeert. De levenscyclus begint op het gedefinieerde ontstaansmoment en eindigt wanneer een object niet meer bestaat in de werkelijkheid.</p>
+<p>Objecttypen in het LGM-BG kunnen een levenscyclusstatus toegekend krijgen. Hiermee wordt het mogelijk om aan te geven in welke fase een domeinobject verkeert. De levenscyclus begint op het gedefinieerde ontstaansmoment en eindigt wanneer een domeinobject niet meer bestaat in de werkelijkheid. De levenscyclusstatus is een eigenschap van het domeinobject, niet van het gegevensobject.</p>
 <p>Het [<cite><a class="bibref" data-link-type="biblio" href="#bib-cim-bg" title="Conceptueel Informatiemodel Bestuurlijke Gebieden">CIM-BG</a></cite>] onderscheidt vier levenscyclusstatussen voor registratieve ruimten: <code>Ontwerp</code>, <code>Niet gerealiseerd</code>, <code>Vastgesteld</code> en <code>Ingetrokken</code>. Zie het [<cite><a class="bibref" data-link-type="biblio" href="#bib-cim-bg" title="Conceptueel Informatiemodel Bestuurlijke Gebieden">CIM-BG</a></cite>] voor een <a href="https://geonovum.github.io/bestuurlijke-gebieden-cm/#levenscyclus">uitgebreide beschrijving van de levenscyclus</a>.</p>
 <p>In het LGM-BG wordt een beperktere set statussen gehanteerd. Er worden alleen de volgende statussen ondersteund:</p>
 <ul>
-<li><code>Vastgesteld</code> — Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving</li>
-<li><code>Ingetrokken</code> — Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving</li>
+<li><code>Vastgesteld</code>: Domeinobject dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving</li>
+<li><code>Ingetrokken</code>: Domeinobject dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving</li>
 </ul>
 <p>De statussen <code>Ontwerp</code> en <code>Niet gerealiseerd</code> worden in dit logisch model niet ondersteund. Er zijn momenteel geen bronnen ingericht om deze statussen te vullen en de informatiebehoefte hiervoor is nog niet in kaart gebracht. In een toekomstige versie van het model kunnen deze statussen worden toegevoegd wanneer daar behoefte aan ontstaat.</p>
 </section><section id="geometrie"><div class="header-wrapper"><h3 id="x2-3-geometrie"><bdi class="secno">2.3 </bdi>Geometrie</h3><a class="self-link" href="#geometrie" aria-label="Permalink for Section 2.3"></a></div>
 <p>Voor de representatie van de locatie en vorm van bestuurlijke gebieden worden in dit model geometrieën gebruikt. Het [<cite><a class="bibref" data-link-type="biblio" href="#bib-cim-bg" title="Conceptueel Informatiemodel Bestuurlijke Gebieden">CIM-BG</a></cite>] beschrijft uitgebreid de <a href="https://geonovum.github.io/bestuurlijke-gebieden-cm/#geometrie">uitgangspunten voor geometrie</a>, waaronder geometrietypen, dimensies en ruimtelijke relaties. Deze uitgangspunten zijn ook van toepassing op het LGM-BG.</p>
-<p>Bestuurlijke gebieden worden tweedimensionaal vastgelegd. In het logisch model is het geometrietype voor bestuurlijke gebieden gedefinieerd als <code>VlakOfMultivlak</code>: een keuze tussen <code>GM_Surface</code> (vlak) of <code>GM_MultiSurface</code> (multivlak). Dit zijn geometrietypen uit [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19107-2019" title="Geographic information — Spatial schema">ISO-19107-2019</a></cite>], conform de [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19125" title="Geographic information — Simple feature access — Part 1: Common architecture">ISO-19125</a></cite>] Simple Features standaard.</p>
+<p>Bestuurlijke gebieden worden tweedimensionaal vastgelegd. 3D- of 2.5D-geometrieën worden in dit model niet gebruikt. In het logisch model is het geometrietype voor bestuurlijke gebieden gedefinieerd als <code>VlakOfMultivlak</code>: een keuze tussen <code>GM_Surface</code> (vlak) of <code>GM_MultiSurface</code> (multivlak). Dit zijn tweedimensionale geometrietypen uit [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19107-2019" title="Geographic information — Spatial schema">ISO-19107-2019</a></cite>], conform de [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19125" title="Geographic information — Simple feature access — Part 1: Common architecture">ISO-19125</a></cite>] Simple Features standaard.</p>
 <p>Het model hanteert uitsluitend expliciete geometrie en lineaire interpolatie; bogen zijn niet toegestaan. Zie [<cite><a class="bibref" data-link-type="biblio" href="#bib-gimeg" title="Geometrie in model en GML">GIMEG</a></cite>] voor een uitgebreidere toelichting op de toepassing van ISO 19107-geometrietypen.</p>
 </section><section id="coordinaatreferentiesystemen"><div class="header-wrapper"><h3 id="x2-4-coordinaatreferentiesystemen"><bdi class="secno">2.4 </bdi>Coördinaatreferentiesystemen</h3><a class="self-link" href="#coordinaatreferentiesystemen" aria-label="Permalink for Section 2.4"></a></div>
 <p>Het Basismodel Geo-informatie [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen3610-2022" title="NEN-3610 Basismodel geo-informatie">NEN3610-2022</a></cite>] stelt dat iedere geometrie voorzien moet zijn van een verwijzing naar het coördinaatreferentiesysteem (CRS) waarin de coördinaten zijn beschreven. Welk CRS van toepassing is, wordt bepaald door de dimensionaliteit van de geometrie en het toepassingsgebied.</p>
@@ -1617,8 +1618,7 @@ img.license{float:left;padding-right:5px;background:0 0}
 </tbody></table>
 <p>Hierbij is de OGC-code CRS84 de longitude-latitude-variant van de 2D WGS 84-realisatie met EPSG-code 4326. Aanbevolen wordt om in de metadata te vermelden dat een nultransformatie vanaf ETRF2000 is gebruikt.</p>
 </section></section><section id="registratiegegevens"><div class="header-wrapper"><h3 id="x2-5-registratiegegevens"><bdi class="secno">2.5 </bdi>Registratiegegevens</h3><a class="self-link" href="#registratiegegevens" aria-label="Permalink for Section 2.5"></a></div>
-<p>In de BVBG worden gegevens geregistreerd over bestuurlijke gebieden. Voor het goed kunnen beheren en gebruiken van deze gegevens is het van belang dat er registratiegegevens worden vastgelegd over de wijze waarop de gegevens zijn geregistreerd.</p>
-<p>Voor elk object in het LGM-BG worden de volgende registratiegegevens vastgelegd:</p>
+<p>In de BVBG worden gegevens geregistreerd over bestuurlijke gebieden. Voor elk domeinobject worden gegevensobjecten vastgelegd die de eigenschappen van dat domeinobject beschrijven. Over elk gegevensobject worden daarnaast registratiegegevens bijgehouden die het gegevensobject zelf als onderwerp hebben. De volgende registratiegegevens worden per gegevensobject vastgelegd:</p>
 <ul>
 <li>Registratiestatus</li>
 <li>Versie</li>
@@ -1628,10 +1628,10 @@ img.license{float:left;padding-right:5px;background:0 0}
 </ul>
 <p>Deze registratiegegevens zijn afgeleid van de registratiegegevens zoals beschreven in [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen3610-2022" title="NEN-3610 Basismodel geo-informatie">NEN3610-2022</a></cite>], [<cite><a class="bibref" data-link-type="biblio" href="#bib-prov-o" title="PROV-O: The PROV Ontology">PROV-O</a></cite>] en [<cite><a class="bibref" data-link-type="biblio" href="#bib-emso" title="DiS Geo : Eisen aan model samenhangende objectenregistratie">EMSO</a></cite>]. De volgende paragrafen lichten deze registratiegegevens verder toe. Zie het <a href="#domein-registratiegegevens">informatiemodel</a> voor de volledige specificatie van het domein Registratiegegevens.</p>
 <section id="versie-tijdlijn-geldigheid-en-tijdlijn-registratie"><div class="header-wrapper"><h4 id="x2-5-1-versie-tijdlijn-geldigheid-en-tijdlijn-registratie"><bdi class="secno">2.5.1 </bdi>Versie, tijdlijn geldigheid en tijdlijn registratie</h4><a class="self-link" href="#versie-tijdlijn-geldigheid-en-tijdlijn-registratie" aria-label="Permalink for Section 2.5.1"></a></div>
-<p>In de levenscyclus van objecten kunnen kenmerken veranderen. Om deze veranderingen te kunnen vastleggen en raadplegen, worden versies van gegevens over deze objecten bijgehouden. Iedere versie van de gegevens over een object wordt beschreven door een [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen3610-2022" title="NEN-3610 Basismodel geo-informatie">NEN3610-2022</a></cite>] Registratie-object. Een registratie-object heeft een versie en eigenschappen die de geldigheidstijdlijn en registratietijdlijn beschrijven.</p>
-<p>De <strong>geldigheidstijdlijn</strong> beschrijft de periode waarin een object in de beschouwde werkelijkheid bestaat of geldig is. Hiervoor worden de eigenschappen <code>beginGeldigheid</code> en <code>eindGeldigheid</code> gebruikt.</p>
-<p>De <strong>registratietijdlijn</strong> beschrijft de periode waarin een versie van de gegevens over een object in de registratie bestaat. Hiervoor worden de eigenschappen <code>tijdstipRegistratie</code> en <code>eindRegistratie</code> gebruikt.</p>
-<p>Een object heeft gedurende zijn levenscyclus op ieder moment in de gecombineerde tijdlijn geldigheid en registratie minimaal één registratie.</p>
+<p>In de levenscyclus van domeinobjecten kunnen kenmerken veranderen. Om deze veranderingen te kunnen vastleggen en raadplegen, worden opeenvolgende gegevensobjecten over dat domeinobject bijgehouden. Iedere versie van de gegevens over een domeinobject wordt vastgelegd als gegevensobject, beschreven door een [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen3610-2022" title="NEN-3610 Basismodel geo-informatie">NEN3610-2022</a></cite>] Registratie-object. Over elk gegevensobject worden registratiegegevens vastgelegd, waaronder een versie en eigenschappen die de geldigheidstijdlijn en registratietijdlijn beschrijven.</p>
+<p>De <strong>geldigheidstijdlijn</strong> beschrijft de periode waarin een domeinobject in de beschouwde werkelijkheid bestaat of geldig is. Hiervoor worden de eigenschappen <code>beginGeldigheid</code> en <code>eindGeldigheid</code> gebruikt.</p>
+<p>De <strong>registratietijdlijn</strong> beschrijft de periode waarin een gegevensobject in de registratie bestaat. Hiervoor worden de eigenschappen <code>tijdstipRegistratie</code> en <code>eindRegistratie</code> gebruikt.</p>
+<p>Een domeinobject heeft gedurende zijn levenscyclus op ieder moment in de gecombineerde tijdlijn geldigheid en registratie minimaal één gegevensobject.</p>
 <figure id="fig-registratiegegevens-in-nen-3610-2022">
   <img src="data/media/registratiegegevens.png" alt="NEN 3610 Registratiegegevens">
   <figcaption><a class="self-link" href="#fig-registratiegegevens-in-nen-3610-2022">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Registratiegegevens in NEN 3610:2022</span></figcaption>
@@ -1649,18 +1649,18 @@ Bij een gemeentelijke herindeling wordt de nieuwe gemeentegrens vastgesteld door
 </aside>
 
 </section><section id="registratiestatus-en-afgevoerde-registraties"><div class="header-wrapper"><h4 id="x2-5-2-registratiestatus-en-afgevoerde-registraties"><bdi class="secno">2.5.2 </bdi>Registratiestatus en afgevoerde registraties</h4><a class="self-link" href="#registratiestatus-en-afgevoerde-registraties" aria-label="Permalink for Section 2.5.2"></a></div>
-<p>Een object kan op ieder moment in de gecombineerde tijdlijn geldigheid en registratie een of meerdere gegevensregistraties kennen. Een gegevensregistratie heeft een registratiestatus. De registratiestatus geeft aan of de gegevensregistratie actief is, of dat het een afgevoerde registratie betreft:</p>
+<p>Een domeinobject kan op ieder moment in de gecombineerde tijdlijn geldigheid en registratie een of meerdere gegevensobjecten kennen. Elk gegevensobject heeft een registratiestatus. De registratiestatus geeft aan of het gegevensobject actief is, of dat het een afgevoerd gegevensobject betreft:</p>
 <ul>
-<li><code>Actief</code> — De gegevensregistratie is actueel in de registratie.</li>
-<li><code>Afgevoerd</code> — De gegevensregistratie is niet meer actief, maar blijft bewaard voor formeel-historische doeleinden.</li>
+<li><code>Actief</code>: Het gegevensobject is actueel in de registratie.</li>
+<li><code>Afgevoerd</code>: Het gegevensobject is niet meer actief, maar blijft bewaard in de tijdlijn registratie.</li>
 </ul>
-<p>Er mag maar één gegevensregistratie zijn met de registratiestatus <code>Actief</code> op een bepaald moment in de gecombineerde tijdlijn geldigheid en registratie.</p>
+<p>Er mag maar één gegevensobject zijn met de registratiestatus <code>Actief</code> op een bepaald moment in de gecombineerde tijdlijn geldigheid en registratie.</p>
 </section><section id="herkomst-en-bronverwijzing"><div class="header-wrapper"><h4 id="x2-5-3-herkomst-en-bronverwijzing"><bdi class="secno">2.5.3 </bdi>Herkomst en bronverwijzing</h4><a class="self-link" href="#herkomst-en-bronverwijzing" aria-label="Permalink for Section 2.5.3"></a></div>
-<p>Voor elke objectregistratie wordt opgenomen waar de gegevens vandaan komen en hoe deze tot stand zijn gekomen. Dit gebeurt door het registreren van herkomst- en bronverwijzingen. De herkomst maakt het mogelijk om de oorspronkelijke bronhouder en het gebruikte brondocument te identificeren.</p>
-<p>Het herkomstmodel in het LGM-BG is gebaseerd op de W3C standaard [<cite><a class="bibref" data-link-type="biblio" href="#bib-prov-o" title="PROV-O: The PROV Ontology">PROV-O</a></cite>]. Door aansluiting op PROV-O is het mogelijk om op een gestandaardiseerde en interoperabele manier de herkomst en bronverwijzingen van objecten te registreren en te interpreteren. In het model is de minimale set van herkomst- en bronverwijzingen opgenomen:</p>
+<p>Voor elk gegevensobject wordt opgenomen waar de gegevens vandaan komen en hoe deze tot stand zijn gekomen. Dit gebeurt door het registreren van herkomst- en bronverwijzingen. De herkomst maakt het mogelijk om de oorspronkelijke bronhouder en het gebruikte brondocument te identificeren.</p>
+<p>Het herkomstmodel in het LGM-BG is gebaseerd op de W3C standaard [<cite><a class="bibref" data-link-type="biblio" href="#bib-prov-o" title="PROV-O: The PROV Ontology">PROV-O</a></cite>]. Door aansluiting op PROV-O is het mogelijk om op een gestandaardiseerde en interoperabele manier de herkomst en bronverwijzingen van gegevensobjecten te registreren en te interpreteren. In het model is de minimale set van herkomst- en bronverwijzingen opgenomen:</p>
 <ul>
-<li><code>afgeleidVan</code> — Een verwijzing naar de bronentiteit (bijvoorbeeld een brondocument) op basis waarvan de registratie tot stand is gekomen.</li>
-<li><code>verantwoordelijkePartij</code> — De actor die verantwoordelijk is voor de gegevens over het object.</li>
+<li><code>afgeleidVan</code>: Een verwijzing naar de bronentiteit (bijvoorbeeld een brondocument) op basis waarvan het gegevensobject tot stand is gekomen.</li>
+<li><code>verantwoordelijkePartij</code>: De actor die verantwoordelijk is voor de gegevens over het domeinobject.</li>
 </ul>
 </section></section><section id="afleidbare-eigenschappen"><div class="header-wrapper"><h3 id="x2-6-afleidbare-eigenschappen"><bdi class="secno">2.6 </bdi>Afleidbare eigenschappen</h3><a class="self-link" href="#afleidbare-eigenschappen" aria-label="Permalink for Section 2.6"></a></div>
 <p>In het LGM-BG worden naast direct geregistreerde eigenschappen ook afleidbare eigenschappen opgenomen. Afleidbare eigenschappen zijn eigenschappen die niet direct worden geregistreerd, maar die kunnen worden afgeleid uit andere geregistreerde eigenschappen, bijvoorbeeld door berekeningen of logica toe te passen op de geregistreerde gegevens.</p>
@@ -5929,7 +5929,7 @@ De voorkeursnaam van de organisatie</td>
 <a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_overheidsorganisatie_attribuutsoort_officiele_naam_excl_soort">officieleNaamExclSoort</a>
 </td>
 <td>
-De officiële naam van de organisatie zonder soortaanduiding, bijvoorbeeld ‘’s-Gravenhage’</td>
+De officiële naam van de organisatie zonder soortaanduiding, bijvoorbeeld ''s-Gravenhage'</td>
 <td>
 <a class="external-link" href="https://docs.geostandaarden.nl/mim/mim/#primitief-datatype-1"> CharacterString</a>
 </td>
@@ -6122,7 +6122,7 @@ De organisatiecode.</td>
 </tr>
 <tr>
 <th>Definitie</th>
-<td>De officiële naam van de organisatie zonder soortaanduiding, bijvoorbeeld ‘’s-Gravenhage’</td>
+<td>De officiële naam van de organisatie zonder soortaanduiding, bijvoorbeeld ''s-Gravenhage'</td>
 </tr>
 <tr>
 <th>Herkomst definitie</th>
@@ -6404,84 +6404,7 @@ De organisatiecode.</td>
 
 
 
-</section><section id="samenwerkingsorganisatie"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_samenwerkingsorganisatie"><bdi class="secno">4.3.1.3 </bdi>Samenwerkingsorganisatie</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_samenwerkingsorganisatie" aria-label="Permalink for Section 4.3.1.3"></a></div><table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
-<th>Identificatie</th>
-<td>https://identifier.overheid.nl/tooi/def/ont/Samenwerkingsorganisatie</td>
-</tr>
-<tr>
-<th>Naam</th>
-<td>Samenwerkingsorganisatie</td>
-</tr>
-<tr>
-<th>Herkomst</th>
-<td>TOOI - Ontologie 1.6.2</td>
-</tr>
-<tr>
-<th>Definitie</th>
-<td>Een organisatie die in het leven is geroepen om een gemeenschappelijke regeling uit te voeren in een publiekrechtelijke of privaatrechtelijke constructie.</td>
-</tr>
-<tr>
-<th>Herkomst definitie</th>
-<td>TOOI - Ontologie 1.6.2</td>
-</tr>
-<tr>
-<th>Begrip</th>
-<td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/samenwerkingsorganisatie">http://begrippen.geostandaarden.nl/bg/id/begrip/samenwerkingsorganisatie</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2025-11-18</td>
-</tr>
-<tr>
-<th>Indicatie abstract object</th>
-<td>Ja</td>
-</tr>
-</tbody><tbody>
-</tbody>
-</table>
-
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-15">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-15" aria-label="Permalink for this Section"></a></div>
-
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_samenwerkingsorganisatie">Samenwerkingsorganisatie</a>
-</td>
-</tr>
-<tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_overheidsorganisatie">Overheidsorganisatie</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2025-11-18</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-</tbody><tbody>
-</tbody>
-</table>
-</section>
-
-
-
-
-
-
-
-</section><section id="openbaarlichaamuitgemeenschappelijkeregeling"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling"><bdi class="secno">4.3.1.4 </bdi>OpenbaarLichaamUitGemeenschappelijkeRegeling</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling" aria-label="Permalink for Section 4.3.1.4"></a></div><table style="width: 100%">
+</section><section id="openbaarlichaamuitgemeenschappelijkeregeling"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling"><bdi class="secno">4.3.1.3 </bdi>OpenbaarLichaamUitGemeenschappelijkeRegeling</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling" aria-label="Permalink for Section 4.3.1.3"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -6526,34 +6449,8 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-16">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-16" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-15">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-15" aria-label="Permalink for this Section"></a></div>
 
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tbody><tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling">OpenbaarLichaamUitGemeenschappelijkeRegeling</a>
-</td>
-</tr>
-<tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_samenwerkingsorganisatie">Samenwerkingsorganisatie</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2025-11-18</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-</tbody><tbody>
-</tbody>
-</table>
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
@@ -6588,7 +6485,7 @@ De organisatiecode.</td>
 
 
 
-</section><section id="gemeente"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_gemeente"><bdi class="secno">4.3.1.5 </bdi>Gemeente</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_gemeente" aria-label="Permalink for Section 4.3.1.5"></a></div><table style="width: 100%">
+</section><section id="gemeente"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_gemeente"><bdi class="secno">4.3.1.4 </bdi>Gemeente</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_gemeente" aria-label="Permalink for Section 4.3.1.4"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -6629,7 +6526,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-17">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-17" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-16">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-16" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -6665,7 +6562,7 @@ De organisatiecode.</td>
 
 
 
-</section><section id="provincie"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_provincie"><bdi class="secno">4.3.1.6 </bdi>Provincie</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_provincie" aria-label="Permalink for Section 4.3.1.6"></a></div><table style="width: 100%">
+</section><section id="provincie"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_provincie"><bdi class="secno">4.3.1.5 </bdi>Provincie</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_provincie" aria-label="Permalink for Section 4.3.1.5"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -6706,7 +6603,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-18">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-18" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-17">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-17" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -6742,7 +6639,7 @@ De organisatiecode.</td>
 
 
 
-</section><section id="rijk"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk"><bdi class="secno">4.3.1.7 </bdi>Rijk</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk" aria-label="Permalink for Section 4.3.1.7"></a></div><table style="width: 100%">
+</section><section id="rijk"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk"><bdi class="secno">4.3.1.6 </bdi>Rijk</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk" aria-label="Permalink for Section 4.3.1.6"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -6787,7 +6684,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-19">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-19" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-18">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-18" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -6823,7 +6720,7 @@ De organisatiecode.</td>
 
 
 
-</section><section id="waterschap"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_waterschap"><bdi class="secno">4.3.1.8 </bdi>Waterschap</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_waterschap" aria-label="Permalink for Section 4.3.1.8"></a></div><table style="width: 100%">
+</section><section id="waterschap"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_waterschap"><bdi class="secno">4.3.1.7 </bdi>Waterschap</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_waterschap" aria-label="Permalink for Section 4.3.1.7"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -6864,7 +6761,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-20">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-20" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-19">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-19" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -6900,7 +6797,7 @@ De organisatiecode.</td>
 
 
 
-</section><section id="veiligheidsregio"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_veiligheidsregio"><bdi class="secno">4.3.1.9 </bdi>Veiligheidsregio</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_veiligheidsregio" aria-label="Permalink for Section 4.3.1.9"></a></div><table style="width: 100%">
+</section><section id="veiligheidsregio"><div class="header-wrapper"><h5 id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_veiligheidsregio"><bdi class="secno">4.3.1.8 </bdi>Veiligheidsregio</h5><a class="self-link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_veiligheidsregio" aria-label="Permalink for Section 4.3.1.8"></a></div><table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
 <tbody><tr>
@@ -6941,7 +6838,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-21">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-21" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-20">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-20" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -7112,7 +7009,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-22">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-22" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-21">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-21" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -7249,7 +7146,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-23">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-23" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-22">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-22" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
@@ -7320,7 +7217,7 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-24">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-24" aria-label="Permalink for this Section"></a></div>
+<section class="notoc"><div class="header-wrapper"><h6 id="overzicht-generalisaties-23">Overzicht generalisaties</h6><a class="self-link" href="#overzicht-generalisaties-23" aria-label="Permalink for this Section"></a></div>
 
 <table style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
