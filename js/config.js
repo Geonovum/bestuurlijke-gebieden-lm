@@ -4,10 +4,10 @@ let respecConfig = {
   // TODO: title is verplicht! Neem hieronder de titel van het document op
   title: "Logisch Gegevensmodel Bestuurlijke Gebieden",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "wv",                   // Werkversie
+  // specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
-  //specStatus: "def",              // Vastgestelde versie
+  specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   //specType: "NO",                 // Norm
@@ -35,7 +35,7 @@ let respecConfig = {
 
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2025-03-28",
+  publishDate: "2026-03-25",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
@@ -96,10 +96,10 @@ let respecConfig = {
     },
     "CIM-BG": {
       title: "Conceptueel Informatiemodel Bestuurlijke Gebieden",
-      href: "https://geonovum.github.io/bestuurlijke-gebieden-cm/",
-      status: "Versie ter vaststelling",
+      href: "https://docs.geostandaarden.nl/bg/def-im-cim-bg-20260324",
+      status: "Vastegestelde versie",
       publisher: "Geonovum",
-      date: "2026-02-04"
+      date: "2026-03-24"
     },
     "NEN3610-2022": {
       title: "NEN-3610 Basismodel geo-informatie",
@@ -118,7 +118,7 @@ let respecConfig = {
     "MODPR": {
       title: "Modelleerprincipes samenhangende objectenregistratie",
       href: "https://geonovum.github.io/disgeo-imsor/modelleerprincipes/",
-      status: "levend document",
+      status: "Levend document",
       publisher: "Geonovum",
     },
     "gebruik-crs": {
@@ -143,10 +143,11 @@ let respecConfig = {
       date: "2019-12",
     },
     "GIMEG": {
-      href: "https://docs.geostandaarden.nl/nen3610/gimeg",
-      publisher: "Geonovum",
-      authors: ["Linda van den Brink", "Paul Janssen", "Wilko Quak"],
       title: "Geometrie in model en GML",
+      href: "https://docs.geostandaarden.nl/nen3610/def-hr-gimeg-20210326/",
+      status: "Vastgestelde versie",
+      publisher: "Geonovum",
+      date: "2021-03-26"
     },
     "TOOI-ONT-1.6.2": {
       title: "TOOI - Ontologie 1.6.2",

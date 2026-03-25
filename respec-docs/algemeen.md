@@ -27,7 +27,7 @@ Een domein attribuut heeft als datatype een URI. De URI verwijst naar de context
 
 Objecttypen in het LGM-BG kunnen een levenscyclusstatus toegekend krijgen. Hiermee wordt het mogelijk om aan te geven in welke fase een domeinobject verkeert. De levenscyclus begint op het gedefinieerde ontstaansmoment en eindigt wanneer een domeinobject niet meer bestaat in de werkelijkheid. De levenscyclusstatus is een eigenschap van het domeinobject, niet van het gegevensobject.
 
-Het [[CIM-BG]] onderscheidt vier levenscyclusstatussen voor registratieve ruimten: `Ontwerp`, `Niet gerealiseerd`, `Vastgesteld` en `Ingetrokken`. Zie het [[CIM-BG]] voor een [uitgebreide beschrijving van de levenscyclus](https://geonovum.github.io/bestuurlijke-gebieden-cm/#levenscyclus).
+Het [[CIM-BG]] onderscheidt vier levenscyclusstatussen voor registratieve ruimten: `Ontwerp`, `Niet gerealiseerd`, `Vastgesteld` en `Ingetrokken`. Zie het [[CIM-BG]] voor een <a data-cite="CIM-BG#levenscyclus">uitgebreide beschrijving van de levenscyclus</a>.
 
 In het LGM-BG wordt een beperktere set statussen gehanteerd. Er worden alleen de volgende statussen ondersteund:
 
@@ -38,7 +38,7 @@ De statussen `Ontwerp` en `Niet gerealiseerd` worden in dit logisch model niet o
 
 ## Geometrie
 
-Voor de representatie van de locatie en vorm van bestuurlijke gebieden worden in dit model geometrieën gebruikt. Het [[CIM-BG]] beschrijft uitgebreid de [uitgangspunten voor geometrie](https://geonovum.github.io/bestuurlijke-gebieden-cm/#geometrie), waaronder geometrietypen, dimensies en ruimtelijke relaties. Deze uitgangspunten zijn ook van toepassing op het LGM-BG.
+Voor de representatie van de locatie en vorm van bestuurlijke gebieden worden in dit model geometrieën gebruikt. Het [[CIM-BG]] beschrijft uitgebreid de <a data-cite="CIM-BG#geometrie">uitgangspunten voor geometrie</a>, waaronder geometrietypen, dimensies en ruimtelijke relaties. Deze uitgangspunten zijn ook van toepassing op het LGM-BG.
 
 Bestuurlijke gebieden worden tweedimensionaal vastgelegd. 3D- of 2.5D-geometrieën worden in dit model niet gebruikt. In het logisch model is het geometrietype voor bestuurlijke gebieden gedefinieerd als `VlakOfMultivlak`: een keuze tussen `GM_Surface` (vlak) of `GM_MultiSurface` (multivlak). Dit zijn tweedimensionale geometrietypen uit [[ISO-19107-2019]], conform de [[ISO-19125]] Simple Features standaard.
 
@@ -48,7 +48,7 @@ Het model hanteert uitsluitend expliciete geometrie en lineaire interpolatie; bo
 
 Het Basismodel Geo-informatie [[NEN3610-2022]] stelt dat iedere geometrie voorzien moet zijn van een verwijzing naar het coördinaatreferentiesysteem (CRS) waarin de coördinaten zijn beschreven. Welk CRS van toepassing is, wordt bepaald door de dimensionaliteit van de geometrie en het toepassingsgebied.
 
-Het toepassingsgebied van het LGM-BG betreft het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende territoriale wateren en maritieme zones. Bestuurlijke gebieden worden tweedimensionaal vastgelegd. Zie het [[CIM-BG]] voor een [uitgebreide beschrijving van coördinaatreferentiesystemen](https://geonovum.github.io/bestuurlijke-gebieden-cm/#co%C3%B6rdinaatreferentiesystemen).
+Het toepassingsgebied van het LGM-BG betreft het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende territoriale wateren en maritieme zones. Bestuurlijke gebieden worden tweedimensionaal vastgelegd. Zie het [[CIM-BG]] voor een <a data-cite="CIM-BG#coördinaatreferentiesystemen">uitgebreide beschrijving van coördinaatreferentiesystemen</a>.
 
 ### Aanlevering
 
@@ -59,7 +59,7 @@ Voor het CRS van 2D-geometrieën gelden bij aanlevering de volgende CRS'en:
 | RD       | 28992 | http://www.opengis.net/def/crs/EPSG/9.9.1/28992 |
 | ETRF2000 | 9067  | http://www.opengis.net/def/crs/EPSG/9.9.1/9067  |
 
-Er zijn verschillende realisaties van ETRS89 in omloop. Het LGM-BG neemt het advies van het *Regional Reference Frame Sub-Commission for Europe* (EUREF) over om de **ETRF2000-realisatie** te gebruiken. Maak bij aanlevering gebruik van een **lijnlengte van maximaal 200 meter**. Dit volgt het langelijnenadvies van het NSGI, dat is overgenomen in [[gebruik-crs]] in verband met compatibiliteit met RDNAPTRANS.
+Er zijn verschillende realisaties van ETRS89 in omloop. Het LGM-BG neemt het advies van het *Regional Reference Frame Sub-Commission for Europe* (EUREF) over om de Nederlandse realisatie van **ETRS89** die is gekoppeld aan de **ETRF2000-realisatie** te gebruiken. Maak bij aanlevering gebruik van een **lijnlengte van maximaal 200 meter**. Dit volgt het langelijnenadvies van het NSGI, dat is overgenomen in [[gebruik-crs]] in verband met compatibiliteit met RDNAPTRANS.
 
 ### Uitlevering
 
@@ -69,7 +69,7 @@ Bij uitlevering zijn dezelfde CRS'en als bij aanlevering beschikbaar. Daarnaast 
 |--------------|------|--------------------------------------------------|
 | ETRS89 (2D)  | 4258 | http://www.opengis.net/def/crs/EPSG/9.9.1/4258  |
 
-Uitlevering via WGS 84 is ook mogelijk via nultransformatie, [zoals beschreven](https://docs.geostandaarden.nl/crs/crs/#wgs-84-gelijkstellen-aan-etrs89-nultransformatie) in [[gebruik-crs]]:
+Uitlevering via WGS 84 is ook mogelijk via nultransformatie, <a data-cite="gebruik-crs#wgs-84-gelijkstellen-aan-etrs89-nultransformatie">zoals beschreven</a> in [[gebruik-crs]]:
 
 | CRS-Naam    | Code   | URI                                              |
 |-------------|--------|--------------------------------------------------|
@@ -101,7 +101,7 @@ De **registratietijdlijn** beschrijft de periode waarin een gegevensobject in de
 Een domeinobject heeft gedurende zijn levenscyclus op ieder moment in de gecombineerde tijdlijn geldigheid en registratie minimaal één gegevensobject.
 
 <figure>
-  <img src="data/media/registratiegegevens.png" alt="NEN 3610 Registratiegegevens">
+  <img src="data/LGM-BG/Registratiegegevens/Package%20View.png" alt="NEN 3610 Registratiegegevens">
   <figcaption>Registratiegegevens in NEN 3610:2022</figcaption>
 </figure>
 
@@ -140,7 +140,7 @@ Afleidbare eigenschappen hebben in het gegevensmodel de waarde `Ja` voor het met
 
 ## Modelleerregels
 
-Het [[CIM-BG]] beschrijft per objecttype de modelleerprincipes en ruimtelijke relaties die gelden voor bestuurlijke gebieden. Zie de [detailbeschrijvingen in het CIM-BG](https://geonovum.github.io/bestuurlijke-gebieden-cm/#beschrijving-inhoud) voor de volledige uitwerking per objecttype. De belangrijkste regels zijn:
+Het [[CIM-BG]] beschrijft per objecttype de modelleerprincipes en ruimtelijke relaties die gelden voor bestuurlijke gebieden. Zie de <a data-cite="CIM-BG#beschrijving-inhoud">detailbeschrijvingen in het CIM-BG</a> voor de volledige uitwerking per objecttype. De belangrijkste regels zijn:
 
 - Gemeentegebieden vormen samen een vlakdekkend geheel binnen een provinciegebied, zonder gaten of overlappingen.
 - Provinciegebieden vormen samen een vlakdekkend geheel binnen een provinciaal ingedeeld landgebied, zonder gaten of overlappingen.

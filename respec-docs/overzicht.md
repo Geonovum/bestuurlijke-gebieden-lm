@@ -22,9 +22,9 @@ Inhoudelijk is het LGM-BG afgeleid van het [[CIM-BG]], dat weer is gebaseerd op 
 
 Dit domein beschrijft de bestuurlijke gebieden zelf. Het abstracte objecttype [`RegistratieveRuimte`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_registratieve_ruimte) vormt de basis, met [`BestuurlijkGebied`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied) als specialisatie. De bestuurlijke gebieden volgen de bestuurlijke indeling van Nederland: het [`Landgebied`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_landgebied) is onderverdeeld in [`Provinciegebieden`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_provinciegebied), die weer zijn onderverdeeld in [`Gemeentegebieden`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_gemeentegebied). Daarnaast kent het model [`Waterschapsgebieden`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_waterschapsgebied) en [`Veiligheidsregiogebieden`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied), die een eigen ruimtelijke indeling kennen die niet samenvalt met de provinciale of gemeentelijke indeling.
 
-Naast de gebieden aan de landszijde van de [basislijn](https://geonovum.github.io/bestuurlijke-gebieden-cm/#maritieme-zones) beschrijft het domein ook de maritieme zones die onder de bestuurlijke verantwoordelijkheid van het Rijk vallen: de [`TerritorialeZee`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_territoriale_zee), [`AansluitendeZone`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_aansluitende_zone), [`ExclusieveEconomischeZone`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone) en het [`ContinentaalPlat`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_continentaal_plat). Deze zones zijn gemodelleerd als specialisatie van [`MaritiemeZone`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_maritieme_zone).
+Naast de gebieden aan de landszijde van de <a data-cite="CIM-BG#maritieme-zones">basislijn</a> beschrijft het domein ook de maritieme zones die onder de bestuurlijke verantwoordelijkheid van het Rijk vallen: de [`TerritorialeZee`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_territoriale_zee), [`AansluitendeZone`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_aansluitende_zone), [`ExclusieveEconomischeZone`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone) en het [`ContinentaalPlat`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_continentaal_plat). Deze zones zijn gemodelleerd als specialisatie van [`MaritiemeZone`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_maritieme_zone).
 
-Zie het [[CIM-BG]] voor de [conceptuele beschrijving](https://geonovum.github.io/bestuurlijke-gebieden-cm/#beschrijving-inhoud) van deze objecttypen en hun onderlinge relaties.
+Zie het [[CIM-BG]] voor de <a data-cite="CIM-BG#beschrijving-inhoud">conceptuele beschrijving</a> van deze objecttypen en hun onderlinge relaties.
 
 ### Registratiegegevens
 
@@ -50,7 +50,7 @@ Het LGM-BG past een deel van de W3C standaard [[PROV-O]] toe om herkomstgegevens
 
 ## Bronnen en afnemers
 
-De geometrie van bestuurlijke gebieden wordt afgeleid uit verschillende bronnen. De belangrijkste afnemers gebruiken bestuurlijke gebieden voor het bepalen van bevoegd gezag en ruimtelijke afbakening. Zie het [[CIM-BG]] voor een [uitgebreide beschrijving van bronnen en afnemers](https://geonovum.github.io/bestuurlijke-gebieden-cm/#cim-bg-in-context).
+De geometrie van bestuurlijke gebieden wordt afgeleid uit verschillende bronnen. De belangrijkste afnemers gebruiken bestuurlijke gebieden voor het bepalen van bevoegd gezag en ruimtelijke afbakening. Zie het [[CIM-BG]] voor een <a data-cite="CIM-BG#cim-bg-in-context">uitgebreide beschrijving van bronnen en afnemers</a>.
 
 ## Standaarden
 
@@ -62,4 +62,4 @@ Het LGM-BG sluit aan op de volgende standaarden:
 - [[PROV-O]] — W3C standaard voor het beschrijven van herkomst
 - [[EMSO]] — Eisen aan model samenhangende objectenregistratie, voor de modelleeruitgangspunten
 
-Zie het [[CIM-BG]] voor een [uitgebreide beschrijving van de standaarden](https://geonovum.github.io/bestuurlijke-gebieden-cm/#standaarden-en-organisaties) en hun toepassing.
+Zie het [[CIM-BG]] voor een <a data-cite="CIM-BG#standaarden-en-organisaties">uitgebreide beschrijving van de standaarden</a> en hun toepassing.

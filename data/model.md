@@ -1,7 +1,6 @@
 # Informatiemodel Logisch model Bestuurlijke gebieden
 ## Domein Bestuurlijk gebied
-
-![Bestuurlijk gebied](data/media/bestuurlijk_gebied.png "Domein Bestuurlijk gebied")
+![Domein Bestuurlijk gebied](data/LGM-BG/Bestuurlijk%20gebied/Package%20View.png "Domein Bestuurlijk gebied")
 
 ### Objecttypen
 
@@ -52,7 +51,6 @@
 </tbody>
 </table>
 
-
 <section class="notoc">
 <h5>Overzicht attribuutsoorten</h5>    
 <table style="width: 100%">
@@ -82,9 +80,6 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </tbody>
 </table>
 </section>
-
-
-
 
 <section class="notoc">
 <h5>Details attribuutsoorten</h5>
@@ -154,7 +149,6 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 </table>
 </section>
 </section>
-
 
 #### BestuurlijkGebied {#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied}
 
@@ -299,9 +293,8 @@ Geometrische representatie van een gebied op land dat door een openbaar lichaam 
 </table>
 </section>
 
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -329,7 +322,6 @@ Gegevens over de registratie van het object als informatieobject.</td>
 </tbody>
 </table>
 </section>
-
 
 <section class="notoc">
 <h5>Details attribuutsoorten</h5>
@@ -694,6 +686,14 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 <td>1</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Overig</td>
 </tr>
@@ -709,6 +709,12 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">BestuurlijkGebied</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie">Registratie</a>
 </td>
 </tr>
 <tbody>
@@ -794,12 +800,6 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 </table>
 </section>
 
-
-
-
-
-
-
 #### Gemeentegebied {#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_gemeentegebied}
 
 <table style="width: 100%">
@@ -877,10 +877,8 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 </table>
 </section>
 
-
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -932,8 +930,6 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 </tbody>
 </table>
 </section>
-
-
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
@@ -991,6 +987,14 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 <td>1..*</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -1006,6 +1010,12 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
 </td>
 </tr>
 <tbody>
@@ -1066,6 +1076,14 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 <td>1..*</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -1081,6 +1099,12 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
 </td>
 </tr>
 <tbody>
@@ -1122,7 +1146,7 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Ja</td>
+<td>Nee</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -1141,6 +1165,14 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 <td>1</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -1156,6 +1188,12 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_gemeentegebied">Gemeentegebied</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_gemeente">Gemeente</a>
 </td>
 </tr>
 <tbody>
@@ -1241,10 +1279,8 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 </table>
 </section>
 
-
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -1284,8 +1320,6 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 </tbody>
 </table>
 </section>
-
-
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
@@ -1343,6 +1377,14 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 <td>0..*</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -1358,6 +1400,12 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_landgebied">Landgebied</a>
 </td>
 </tr>
 <tbody>
@@ -1418,6 +1466,14 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 <td>1</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -1433,6 +1489,12 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_provinciegebied">Provinciegebied</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_provincie">Provincie</a>
 </td>
 </tr>
 <tbody>
@@ -1514,10 +1576,8 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 </table>
 </section>
 
-
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -1545,8 +1605,6 @@ Relatie die aangeeft dat dit object een landgebied van een regionaal openbaar li
 </tbody>
 </table>
 </section>
-
-
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
@@ -1585,7 +1643,7 @@ Relatie die aangeeft dat dit object een landgebied van een regionaal openbaar li
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Ja</td>
+<td>Nee</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -1604,6 +1662,14 @@ Relatie die aangeeft dat dit object een landgebied van een regionaal openbaar li
 <td>1</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -1619,6 +1685,12 @@ Relatie die aangeeft dat dit object een landgebied van een regionaal openbaar li
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_landgebied">Landgebied</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 <tbody>
@@ -1708,10 +1780,8 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 </table>
 </section>
 
-
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -1739,8 +1809,6 @@ Relatie die aangeeft dat dit object een waterschapsgebied van een regionaal open
 </tbody>
 </table>
 </section>
-
-
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
@@ -1779,7 +1847,7 @@ Relatie die aangeeft dat dit object een waterschapsgebied van een regionaal open
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Ja</td>
+<td>Nee</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -1798,6 +1866,14 @@ Relatie die aangeeft dat dit object een waterschapsgebied van een regionaal open
 <td>1</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -1813,6 +1889,12 @@ Relatie die aangeeft dat dit object een waterschapsgebied van een regionaal open
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_waterschapsgebied">Waterschapsgebied</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_waterschap">Waterschap</a>
 </td>
 </tr>
 <tbody>
@@ -1894,10 +1976,8 @@ Relatie die aangeeft dat dit object een waterschapsgebied van een regionaal open
 </table>
 </section>
 
-
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -1925,8 +2005,6 @@ Relatie die aangeeft dat dit object een veiligheidsregiogebied van een regionaal
 </tbody>
 </table>
 </section>
-
-
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
@@ -1965,7 +2043,7 @@ Relatie die aangeeft dat dit object een veiligheidsregiogebied van een regionaal
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Ja</td>
+<td>Nee</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -1984,6 +2062,14 @@ Relatie die aangeeft dat dit object een veiligheidsregiogebied van een regionaal
 <td>1</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -1999,6 +2085,12 @@ Relatie die aangeeft dat dit object een veiligheidsregiogebied van een regionaal
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied">Veiligheidsregiogebied</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_veiligheidsregio">Veiligheidsregio</a>
 </td>
 </tr>
 <tbody>
@@ -2090,10 +2182,8 @@ Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebi
 </table>
 </section>
 
-
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -2121,8 +2211,6 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 </tbody>
 </table>
 </section>
-
-
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
@@ -2161,7 +2249,7 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Ja</td>
+<td>Nee</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -2180,6 +2268,14 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 <td>1</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -2195,6 +2291,12 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_territoriale_zee">TerritorialeZee</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 <tbody>
@@ -2284,10 +2386,8 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 </table>
 </section>
 
-
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -2315,8 +2415,6 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 </tbody>
 </table>
 </section>
-
-
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
@@ -2355,7 +2453,7 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Ja</td>
+<td>Nee</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -2374,6 +2472,14 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 <td>1</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -2389,6 +2495,12 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_aansluitende_zone">AansluitendeZone</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 <tbody>
@@ -2478,10 +2590,8 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 </table>
 </section>
 
-
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -2509,8 +2619,6 @@ Relatie die aangeeft dat dit object een exclusieve economische zone van een regi
 </tbody>
 </table>
 </section>
-
-
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
@@ -2549,7 +2657,7 @@ Relatie die aangeeft dat dit object een exclusieve economische zone van een regi
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Ja</td>
+<td>Nee</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -2568,6 +2676,14 @@ Relatie die aangeeft dat dit object een exclusieve economische zone van een regi
 <td>1</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Landelijk kerngegeven</td>
 </tr>
@@ -2583,6 +2699,12 @@ Relatie die aangeeft dat dit object een exclusieve economische zone van een regi
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone">ExclusieveEconomischeZone</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk">Rijk</a>
 </td>
 </tr>
 <tbody>
@@ -2674,10 +2796,8 @@ Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlan
 </table>
 </section>
 
-
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -2705,8 +2825,6 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 </tbody>
 </table>
 </section>
-
-
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
@@ -2745,7 +2863,7 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Ja</td>
+<td>Nee</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -2762,6 +2880,14 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 <tr>
 <th>Kardinaliteit relatie bron</th>
 <td>1</td>
+</tr>
+<tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
 </tr>
 <tr>
 <th>Authentiek</th>
@@ -2781,14 +2907,17 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 <a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_continentaal_plat">ContinentaalPlat</a>
 </td>
 </tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk">Rijk</a>
+</td>
+</tr>
 <tbody>
 </tbody>
 </table>
 </section>
 </section>
-
-
-
 
 ### Keuzen tussen datatypen
 
@@ -2825,7 +2954,6 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 </tbody>
 </table>
 
-
 <section class="notoc">
 <h5>Overzicht datatypekeuzen</h5>
 <table style="width: 100%">
@@ -2845,9 +2973,6 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 </tbody>
 </table>
 </section>
-
-
-
 
 ### Enumeraties
 
@@ -2894,7 +3019,6 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 </tbody>
 </table>
 
-
 <section class="notoc">
 <h5>Overzicht waarden</h5>    
 <table style="width: 100%">
@@ -2918,14 +3042,10 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 </tbody>
 </table>
 
-
 </section>
 
-
-
 ## Domein Registratiegegevens
-
-![Registratiegegevens](data/media/registratiegegevens.png "Domein Registratiegegevens")
+![Domein Registratiegegevens](data/LGM-BG/Registratiegegevens/Package%20View.png "Domein Registratiegegevens")
 
 ### Objecttypen
 
@@ -3092,9 +3212,8 @@ Eind van de periode dat deze versie van het informatieobject actueel is in de re
 </table>
 </section>
 
-
 <section class="notoc">
-<h5>Overzicht Relatiesoorten</h5>    
+<h5>Overzicht Relatiesoorten</h5>
 <table style="width: 100%">
 <colgroup style="width: 25%"></colgroup>
 <colgroup style="width: 50%"></colgroup>
@@ -3134,7 +3253,6 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 </tbody>
 </table>
 </section>
-
 
 <section class="notoc">
 <h5>Details attribuutsoorten</h5>
@@ -3640,6 +3758,14 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <td>0..*</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Overig</td>
 </tr>
@@ -3655,6 +3781,12 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie">Registratie</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_actor">Actor</a>
 </td>
 </tr>
 <tbody>
@@ -3711,6 +3843,14 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <td>0..*</td>
 </tr>
 <tr>
+<th>Unidirectioneel</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Aggregatietype</th>
+<td>Geen</td>
+</tr>
+<tr>
 <th>Authentiek</th>
 <td>Overig</td>
 </tr>
@@ -3726,6 +3866,12 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <th>Bron</th>
 <td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie">Registratie</a>
+</td>
+</tr>
+<tr>
+<th>Doel</th>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit">Bronentiteit</a>
 </td>
 </tr>
 <tbody>
@@ -3800,12 +3946,6 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 </tbody>
 </table>
 </section>
-
-
-
-
-
-
 
 #### Brondocument {#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument}
 
@@ -3915,9 +4055,6 @@ De datum van het brondocument op basis waarvan een opname, mutatie of een verwij
 </tbody>
 </table>
 </section>
-
-
-
 
 <section class="notoc">
 <h5>Details attribuutsoorten</h5>
@@ -4053,13 +4190,6 @@ De datum van het brondocument op basis waarvan een opname, mutatie of een verwij
 </section>
 </section>
 
-
-
-
-
-
-
-
 ### Enumeraties
 
 #### StatusRegistratie {#informatiemodel_lgm_bg_domein_registratiegegevens_enumeratie_status_registratie}
@@ -4099,7 +4229,6 @@ De datum van het brondocument op basis waarvan een opname, mutatie of een verwij
 </tbody>
 </table>
 
-
 <section class="notoc">
 <h5>Overzicht waarden</h5>    
 <table style="width: 100%">
@@ -4123,14 +4252,10 @@ Indicatie dat het informatieobject uit de registratie is afgevoerd.</td>
 </tbody>
 </table>
 
-
 </section>
 
-
-
 ## View TOOI - Thesaurus en Ontologie Overheidsinformatie
-
-![TOOI - Thesaurus en Ontologie Overheidsinformatie](data/media/tooi_-_thesaurus_en_ontologie_overheidsinformatie.png "View TOOI - Thesaurus en Ontologie Overheidsinformatie")
+![View TOOI - Thesaurus en Ontologie Overheidsinformatie](data/LGM-BG/TOOI%20-%20Thesaurus%20en%20Ontologie%20Overheidsinformatie/Package%20View.png "View TOOI - Thesaurus en Ontologie Overheidsinformatie")
 
 ### Objecttypen
 
@@ -4284,9 +4409,6 @@ De organisatiecode.</td>
 </tbody>
 </table>
 </section>
-
-
-
 
 <section class="notoc">
 <h5>Details attribuutsoorten</h5>
@@ -4639,7 +4761,6 @@ De organisatiecode.</td>
 </section>
 </section>
 
-
 #### RegionaalOpenbaarLichaam {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_regionaal_openbaar_lichaam}
 
 <table style="width: 100%">
@@ -4721,12 +4842,6 @@ De organisatiecode.</td>
 </table>
 </section>
 
-
-
-
-
-
-
 #### OpenbaarLichaamUitGemeenschappelijkeRegeling {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling}
 
 <table style="width: 100%">
@@ -4804,12 +4919,6 @@ De organisatiecode.</td>
 </table>
 </section>
 
-
-
-
-
-
-
 #### Gemeente {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_gemeente}
 
 <table style="width: 100%">
@@ -4883,12 +4992,6 @@ De organisatiecode.</td>
 </table>
 </section>
 
-
-
-
-
-
-
 #### Provincie {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_provincie}
 
 <table style="width: 100%">
@@ -4961,12 +5064,6 @@ De organisatiecode.</td>
 </tbody>
 </table>
 </section>
-
-
-
-
-
-
 
 #### Rijk {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk}
 
@@ -5045,12 +5142,6 @@ De organisatiecode.</td>
 </table>
 </section>
 
-
-
-
-
-
-
 #### Waterschap {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_waterschap}
 
 <table style="width: 100%">
@@ -5123,12 +5214,6 @@ De organisatiecode.</td>
 </tbody>
 </table>
 </section>
-
-
-
-
-
-
 
 #### Veiligheidsregio {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_veiligheidsregio}
 
@@ -5203,23 +5288,8 @@ De organisatiecode.</td>
 </table>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## View PROV-O
-
-![PROV-O](data/media/prov-o.png "View PROV-O")
+![View PROV-O](data/LGM-BG/PROV-O/Package%20View.png "View PROV-O")
 
 ### Objecttypen
 
@@ -5260,13 +5330,6 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-
-
-
-
-
-
-
 #### Actor {#informatiemodel_lgm_bg_view_prov_o_objecttype_actor}
 
 <table style="width: 100%">
@@ -5303,13 +5366,6 @@ De organisatiecode.</td>
 <tbody>
 </tbody>
 </table>
-
-
-
-
-
-
-
 
 #### Organisatie {#informatiemodel_lgm_bg_view_prov_o_objecttype_organisatie}
 
@@ -5378,23 +5434,8 @@ De organisatiecode.</td>
 </table>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Extern NEN 3610:2022 - Basismodel geo-informatie
-
-![NEN 3610:2022 - Basismodel geo-informatie](data/media/nen_3610_2022_-_basismodel_geo-informatie.png "Extern NEN 3610:2022 - Basismodel geo-informatie")
+![Extern NEN 3610:2022 - Basismodel geo-informatie](data/NEN%203610-2022%20-%20Basismodel%20geo-informatie/Package%20View.png "Extern NEN 3610:2022 - Basismodel geo-informatie")
 
 ### Objecttypen
 
@@ -5439,13 +5480,6 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-
-
-
-
-
-
-
 #### VirtueleRuimte {#informatiemodel_nen3610_domein_semantisch_model_objecttype_virtuele_ruimte}
 
 <table style="width: 100%">
@@ -5486,38 +5520,6 @@ De organisatiecode.</td>
 <tbody>
 </tbody>
 </table>
-
-<section class="notoc">
-<h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_virtuele_ruimte">VirtueleRuimte (NEN 3610:2022 - Basismodel geo-informatie)</a>
-</td>
-</tr>
-<tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_geo_object">GeoObject (NEN 3610:2022 - Basismodel geo-informatie)</a>
-</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-<tbody>
-</tbody>
-</table>
-</section>
-
-
-
-
-
-
 
 #### RegistratieveRuimte {#informatiemodel_nen3610_domein_semantisch_model_objecttype_registratieve_ruimte}
 
@@ -5560,28 +5562,3 @@ De organisatiecode.</td>
 </tbody>
 </table>
 
-<section class="notoc">
-<h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_registratieve_ruimte">RegistratieveRuimte (NEN 3610:2022 - Basismodel geo-informatie)</a>
-</td>
-</tr>
-<tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_nen3610_domein_semantisch_model_objecttype_virtuele_ruimte">VirtueleRuimte (NEN 3610:2022 - Basismodel geo-informatie)</a>
-</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-<tbody>
-</tbody>
-</table>
-</section>

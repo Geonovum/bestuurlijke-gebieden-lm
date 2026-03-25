@@ -38,7 +38,7 @@ Het LGM-BG hanteert dezelfde scope als het [[CIM-BG]]. De volgende typen bestuur
 - Veiligheidsregiogebied
 - Maritieme zones: territoriale zee, aansluitende zone, exclusieve economische zone en het continentaal plat
 
-Zie de [inleiding van het CIM-BG](https://geonovum.github.io/bestuurlijke-gebieden-cm/#inleiding) voor de volledige scopebeschrijving, achtergrond en afbakening.
+Zie de <a data-cite="CIM-BG#inleiding">inleiding van het CIM-BG</a> voor de volledige scopebeschrijving, achtergrond en afbakening.
 
 ## Leeswijzer
 
