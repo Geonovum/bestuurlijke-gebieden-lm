@@ -32,11 +32,7 @@ Het model beschrijft ook de gegevens die nodig zijn voor het beheren van objectr
 
 ### Externe modellen
 
-Tot slot bevat het model een extern package en twee views op externe modellen. Een <a data-cite="MIM12#extern">extern package</a> is in [[MIM12]] een groepering van modelelementen die een externe instantie beheert en beschikbaar stelt aan een informatiemodel en die in het informatiemodel ongewijzigd gebruikt worden. Een <a data-cite="MIM12#view">view</a> is een groepering van modelelementen die gespecificeerd zijn in een extern informatiemodel en vanuit het perspectief van het eigen informatiemodel inzicht geeft welke gegevens van deze objecttypen relevant zijn binnen het eigen informatiemodel. In beide gevallen worden de objecttypen niet door het eigen model beheerd, maar door een extern model of een externe registratie. Door deze op te nemen kan het eigen model verwijzen naar externe objecttypen en ze in samenhang met de eigen gegevens uitleveren.
-
-#### Extern NEN 3610
-
-Het LGM-BG is een extensie op het Basismodel Geo-informatie [[NEN3610-2022]]. Het model bevat een extern package met de objecttypen uit NEN 3610 waarvan de objecttypen in het LGM-BG een specialisatie zijn. Dit betreft de hiërarchie [`GeoObject`](#informatiemodel_nen3610_domein_semantisch_model_objecttype_geo_object) > [`VirtueleRuimte`](#informatiemodel_nen3610_domein_semantisch_model_objecttype_virtuele_ruimte) > [`RegistratieveRuimte`](#informatiemodel_nen3610_domein_semantisch_model_objecttype_registratieve_ruimte). De `RegistratieveRuimte` uit het LGM-BG is gemodelleerd als specialisatie van de NEN 3610 `RegistratieveRuimte`.
+Tot slot bevat het model twee views op externe modellen. Een <a data-cite="MIM12#view">view</a> is een groepering van modelelementen die gespecificeerd zijn in een extern informatiemodel en vanuit het perspectief van het eigen informatiemodel inzicht geeft welke gegevens van deze objecttypen relevant zijn binnen het eigen informatiemodel. In beide gevallen worden de objecttypen niet door het eigen model beheerd, maar door een extern model of een externe registratie. Door deze op te nemen kan het eigen model verwijzen naar externe objecttypen en ze in samenhang met de eigen gegevens uitleveren.
 
 #### View TOOI
 
