@@ -1,0 +1,527 @@
+{
+  "$id" : "http://modellen.geostandaarden.nl/def/bg#",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "$defs" : {
+    "StatusRegistratieveRuimte" : {
+      "type" : "string",
+      "enum" : [ "Vastgesteld", "Ingetrokken" ],
+      "$anchor" : "StatusRegistratieveRuimte"
+    },
+    "StatusRegistratie" : {
+      "type" : "string",
+      "enum" : [ "Actief", "Afgevoerd" ],
+      "$anchor" : "StatusRegistratie"
+    },
+    "VlakOfMultivlak" : {
+      "type" : "object",
+      "$anchor" : "VlakOfMultivlak",
+      "oneOf" : [ {
+        "$ref" : "https://beta.schemas.opengis.net/json-fg/geometry-object.json#/$defs/MultiPolygon"
+      }, {
+        "$ref" : "https://beta.schemas.opengis.net/json-fg/geometry-object.json#/$defs/Polygon"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "RegistratieveRuimte" : {
+      "type" : "object",
+      "$anchor" : "RegistratieveRuimte",
+      "properties" : {
+        "status" : {
+          "$ref" : "#/$defs/StatusRegistratieveRuimte"
+        }
+      },
+      "required" : [ "status" ]
+    },
+    "BestuurlijkGebied" : {
+      "type" : "object",
+      "$anchor" : "BestuurlijkGebied",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "identificatie" : {
+            "type" : "string",
+            "pattern" : "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
+          },
+          "domein" : {
+            "type" : "string",
+            "pattern" : "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
+          },
+          "naam" : {
+            "type" : "string"
+          },
+          "geometrie" : {
+            "$ref" : "#/$defs/VlakOfMultivlak"
+          },
+          "geregistreerdMet" : {
+            "$ref" : "#/$defs/Registratie"
+          }
+        },
+        "required" : [ "identificatie", "domein", "geometrie", "geregistreerdMet" ]
+      }, {
+        "$ref" : "#/$defs/RegistratieveRuimte"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "MaritiemeZone" : {
+      "type" : "object",
+      "$anchor" : "MaritiemeZone",
+      "allOf" : [ {
+        "type" : "object"
+      }, {
+        "$ref" : "#/$defs/BestuurlijkGebied"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Gemeentegebied" : {
+      "type" : "object",
+      "$anchor" : "Gemeentegebied",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Gemeentegebied"
+          },
+          "ligtInProvinciegebied" : {
+            "$ref" : "#/$defs/Provinciegebied"
+          },
+          "ligtInVeiligheidsregiogebied" : {
+            "$ref" : "#/$defs/Veiligheidsregiogebied"
+          },
+          "isGemeentegebiedVan" : {
+            "$ref" : "#/$defs/Gemeente"
+          }
+        },
+        "required" : [ "entityType", "ligtInProvinciegebied", "ligtInVeiligheidsregiogebied", "isGemeentegebiedVan" ]
+      }, {
+        "$ref" : "#/$defs/BestuurlijkGebied"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Provinciegebied" : {
+      "type" : "object",
+      "$anchor" : "Provinciegebied",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Provinciegebied"
+          },
+          "ligtInLandgebied" : {
+            "$ref" : "#/$defs/Landgebied"
+          },
+          "isProvinciegebiedVan" : {
+            "$ref" : "#/$defs/Provincie"
+          }
+        },
+        "required" : [ "entityType", "ligtInLandgebied", "isProvinciegebiedVan" ]
+      }, {
+        "$ref" : "#/$defs/BestuurlijkGebied"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Landgebied" : {
+      "type" : "object",
+      "$anchor" : "Landgebied",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Landgebied"
+          },
+          "isLandgebiedVan" : {
+            "$ref" : "#/$defs/Rijk"
+          }
+        },
+        "required" : [ "entityType", "isLandgebiedVan" ]
+      }, {
+        "$ref" : "#/$defs/BestuurlijkGebied"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Waterschapsgebied" : {
+      "type" : "object",
+      "$anchor" : "Waterschapsgebied",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Waterschapsgebied"
+          },
+          "isWaterschapsgebiedVan" : {
+            "$ref" : "#/$defs/Waterschap"
+          }
+        },
+        "required" : [ "entityType", "isWaterschapsgebiedVan" ]
+      }, {
+        "$ref" : "#/$defs/BestuurlijkGebied"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Veiligheidsregiogebied" : {
+      "type" : "object",
+      "$anchor" : "Veiligheidsregiogebied",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Veiligheidsregiogebied"
+          },
+          "isVeiligheidsregiogebiedVan" : {
+            "$ref" : "#/$defs/Veiligheidsregio"
+          }
+        },
+        "required" : [ "entityType", "isVeiligheidsregiogebiedVan" ]
+      }, {
+        "$ref" : "#/$defs/BestuurlijkGebied"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "TerritorialeZee" : {
+      "type" : "object",
+      "$anchor" : "TerritorialeZee",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "TerritorialeZee"
+          },
+          "isTerritorialeZeeVan" : {
+            "$ref" : "#/$defs/Rijk"
+          }
+        },
+        "required" : [ "entityType", "isTerritorialeZeeVan" ]
+      }, {
+        "$ref" : "#/$defs/MaritiemeZone"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "AansluitendeZone" : {
+      "type" : "object",
+      "$anchor" : "AansluitendeZone",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "AansluitendeZone"
+          },
+          "isAansluitendeZoneVan" : {
+            "$ref" : "#/$defs/Rijk"
+          }
+        },
+        "required" : [ "entityType", "isAansluitendeZoneVan" ]
+      }, {
+        "$ref" : "#/$defs/MaritiemeZone"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "ExclusieveEconomischeZone" : {
+      "type" : "object",
+      "$anchor" : "ExclusieveEconomischeZone",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "ExclusieveEconomischeZone"
+          },
+          "isExclusieveEconomischeZoneVan" : {
+            "$ref" : "#/$defs/Rijk"
+          }
+        },
+        "required" : [ "entityType", "isExclusieveEconomischeZoneVan" ]
+      }, {
+        "$ref" : "#/$defs/MaritiemeZone"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "ContinentaalPlat" : {
+      "type" : "object",
+      "$anchor" : "ContinentaalPlat",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "ContinentaalPlat"
+          },
+          "isContinentaalPlatVan" : {
+            "$ref" : "#/$defs/Rijk"
+          }
+        },
+        "required" : [ "entityType", "isContinentaalPlatVan" ]
+      }, {
+        "$ref" : "#/$defs/MaritiemeZone"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Registratie" : {
+      "type" : "object",
+      "$anchor" : "Registratie",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Registratie"
+          },
+          "versie" : {
+            "type" : "string",
+            "maxLength" : 50,
+            "minLength" : 1
+          },
+          "statusRegistratie" : {
+            "$ref" : "#/$defs/StatusRegistratie"
+          },
+          "beginGeldigheid" : {
+            "type" : "string",
+            "format" : "date"
+          },
+          "eindGeldigheid" : {
+            "type" : "string",
+            "format" : "date"
+          },
+          "tijdstipRegistratie" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "eindRegistratie" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "verantwoordelijkePartij" : {
+            "$ref" : "#/$defs/Actor_OneOf"
+          },
+          "afgeleidVan" : {
+            "type" : "array",
+            "readOnly" : false,
+            "uniqueItems" : true,
+            "items" : {
+              "$ref" : "#/$defs/Bronentiteit_OneOf"
+            }
+          }
+        },
+        "required" : [ "entityType", "versie", "statusRegistratie", "beginGeldigheid", "tijdstipRegistratie", "verantwoordelijkePartij" ]
+      }, {
+        "$ref" : "#/$defs/Entiteit"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Bronentiteit" : {
+      "type" : "object",
+      "$anchor" : "Bronentiteit",
+      "allOf" : [ {
+        "type" : "object"
+      }, {
+        "$ref" : "#/$defs/Entiteit"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Brondocument" : {
+      "type" : "object",
+      "$anchor" : "Brondocument",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Brondocument"
+          },
+          "identificatie" : {
+            "type" : "string"
+          },
+          "documentdatum" : {
+            "type" : "string",
+            "format" : "date"
+          }
+        },
+        "required" : [ "entityType", "identificatie" ]
+      }, {
+        "$ref" : "#/$defs/Bronentiteit"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Overheidsorganisatie" : {
+      "type" : "object",
+      "$anchor" : "Overheidsorganisatie",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "uri" : {
+            "type" : "string",
+            "format" : "uri"
+          },
+          "naam" : {
+            "type" : "string"
+          },
+          "officieleNaamExclSoort" : {
+            "type" : "string"
+          },
+          "officieleNaamInclSoort" : {
+            "type" : "string"
+          },
+          "organisatiecode" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "uri", "naam", "organisatiecode" ]
+      }, {
+        "$ref" : "#/$defs/Organisatie"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "RegionaalOpenbaarLichaam" : {
+      "type" : "object",
+      "$anchor" : "RegionaalOpenbaarLichaam",
+      "allOf" : [ {
+        "type" : "object"
+      }, {
+        "$ref" : "#/$defs/Overheidsorganisatie"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "OpenbaarLichaamUitGemeenschappelijkeRegeling" : {
+      "type" : "object",
+      "$anchor" : "OpenbaarLichaamUitGemeenschappelijkeRegeling",
+      "allOf" : [ {
+        "type" : "object"
+      }, {
+        "$ref" : "#/$defs/RegionaalOpenbaarLichaam"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Gemeente" : {
+      "type" : "object",
+      "$anchor" : "Gemeente",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Gemeente"
+          }
+        },
+        "required" : [ "entityType" ]
+      }, {
+        "$ref" : "#/$defs/RegionaalOpenbaarLichaam"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Provincie" : {
+      "type" : "object",
+      "$anchor" : "Provincie",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Provincie"
+          }
+        },
+        "required" : [ "entityType" ]
+      }, {
+        "$ref" : "#/$defs/RegionaalOpenbaarLichaam"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Rijk" : {
+      "type" : "object",
+      "$anchor" : "Rijk",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Rijk"
+          }
+        },
+        "required" : [ "entityType" ]
+      }, {
+        "$ref" : "#/$defs/RegionaalOpenbaarLichaam"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Waterschap" : {
+      "type" : "object",
+      "$anchor" : "Waterschap",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Waterschap"
+          }
+        },
+        "required" : [ "entityType" ]
+      }, {
+        "$ref" : "#/$defs/RegionaalOpenbaarLichaam"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Veiligheidsregio" : {
+      "type" : "object",
+      "$anchor" : "Veiligheidsregio",
+      "allOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "entityType" : {
+            "type" : "string",
+            "const" : "Veiligheidsregio"
+          }
+        },
+        "required" : [ "entityType" ]
+      }, {
+        "$ref" : "#/$defs/OpenbaarLichaamUitGemeenschappelijkeRegeling"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Entiteit" : {
+      "type" : "object",
+      "$anchor" : "Entiteit"
+    },
+    "Actor" : {
+      "type" : "object",
+      "$anchor" : "Actor"
+    },
+    "Organisatie" : {
+      "type" : "object",
+      "$anchor" : "Organisatie",
+      "allOf" : [ {
+        "type" : "object"
+      }, {
+        "$ref" : "#/$defs/Actor"
+      } ],
+      "unevaluatedProperties" : false
+    },
+    "Bronentiteit_OneOf" : {
+      "type" : "object",
+      "$anchor" : "Bronentiteit_OneOf",
+      "unevaluatedProperties" : false,
+      "oneOf" : [ {
+        "$ref" : "#/$defs/Brondocument"
+      } ]
+    },
+    "Actor_OneOf" : {
+      "type" : "object",
+      "$anchor" : "Actor_OneOf",
+      "unevaluatedProperties" : false,
+      "oneOf" : [ {
+        "$ref" : "#/$defs/Gemeente"
+      }, {
+        "$ref" : "#/$defs/Provincie"
+      }, {
+        "$ref" : "#/$defs/Rijk"
+      }, {
+        "$ref" : "#/$defs/Waterschap"
+      }, {
+        "$ref" : "#/$defs/Veiligheidsregio"
+      } ]
+    }
+  }
+}
