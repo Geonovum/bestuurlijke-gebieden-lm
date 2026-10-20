@@ -50,7 +50,7 @@ Het model hanteert uitsluitend expliciete geometrie en lineaire interpolatie; bo
 
 Het Basismodel Geo-informatie [[NEN3610-2022]] stelt dat iedere geometrie voorzien moet zijn van een verwijzing naar het coördinaatreferentiesysteem (CRS) waarin de coördinaten zijn beschreven. Welk CRS van toepassing is, wordt bepaald door de dimensionaliteit van de geometrie en het toepassingsgebied.
 
-Het toepassingsgebied van het LGM-BG betreft het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende territoriale wateren en maritieme zones. Bestuurlijke gebieden worden tweedimensionaal vastgelegd. Zie het [[CIM-BG]] voor een <a data-cite="CIM-BG#coördinaatreferentiesystemen">uitgebreide beschrijving van coördinaatreferentiesystemen</a>.
+Het toepassingsgebied van het LGM-BG betreft het Europese grondgebied van het Koninkrijk der Nederlanden, inclusief de daarbij behorende territoriale wateren en maritieme zones. Bestuurlijke gebieden worden tweedimensionaal vastgelegd. Zie het [[CIM-BG]] voor een <a data-cite="CIM-BG#coordinaatreferentiesystemen">uitgebreide beschrijving van coördinaatreferentiesystemen</a>.
 
 ### Aanlevering
 
