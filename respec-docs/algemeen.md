@@ -103,7 +103,7 @@ De **registratietijdlijn** beschrijft de periode waarin een gegevensobject in de
 Een domeinobject heeft gedurende zijn levenscyclus op ieder moment in de gecombineerde tijdlijn geldigheid en registratie minimaal één gegevensobject.
 
 <figure>
-  <div data-include="data/model/registratiegegevens/package-view.svg" data-include-format="html"><img src="data/model/registratiegegevens/package-view.png" alt="Domein Registratiegegevens" loading="lazy"></div>
+  <img src="data/model/registratiegegevens/package-view.png" alt="Domein Registratiegegevens" loading="lazy">
   <figcaption>Domein Registratiegegevens in het LGM-BG</figcaption>
 </figure>
 
