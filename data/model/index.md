@@ -1,6 +1,11 @@
-# Informatiemodel Logisch model Bestuurlijke gebieden
-## Domein Bestuurlijk gebied
-![Domein Bestuurlijk gebied](data/LGM-BG/Bestuurlijk%20gebied/Package%20View.png "Domein Bestuurlijk gebied")
+# Informatiemodel Logisch model Bestuurlijke gebieden {#informatiemodel_lgm_bg}
+
+## Domein Bestuurlijk gebied {#informatiemodel_lgm_bg_domein_bestuurlijk_gebied}
+
+<figure data-md-diagram="1cf9285e-ded2-39a6-b275-e7caca4b757a">
+<div data-include="data/model/bestuurlijk-gebied/package-view.svg" data-include-format="html"><img src="data/model/bestuurlijk-gebied/package-view.png" alt="Domein Bestuurlijk gebied" loading="lazy"></div>
+<figcaption>Domein Bestuurlijk gebied</figcaption>
+</figure>
 
 ### Objecttypen
 
@@ -36,8 +41,7 @@
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/registratieve_ruimte">http://begrippen.geostandaarden.nl/bg/id/begrip/registratieve_ruimte</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/registratieve_ruimte">http://begrippen.geostandaarden.nl/bg/id/begrip/registratieve_ruimte</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -182,8 +186,7 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/bestuurlijk_gebied">http://begrippen.geostandaarden.nl/bg/id/begrip/bestuurlijk_gebied</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/bestuurlijk_gebied">http://begrippen.geostandaarden.nl/bg/id/begrip/bestuurlijk_gebied</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -199,9 +202,13 @@ Fase van de levenscyclus waarin een bestuurlijk gebied zich bevindt.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_generalisatie_registratieve_ruimte" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#BestuurlijkGebied.generalisatie-RegistratieveRuimte</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -289,6 +296,18 @@ Geometrische representatie van een gebied op land dat door een openbaar lichaam 
 <td>
 1</td>
 </tr>
+<tr>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie_zonder_binnenwateren">geometrieZonderBinnenwateren</a>
+</td>
+<td>
+Geometrische representatie van een gebied op land (zonder binnenwateren) dat door een openbaar lichaam wordt bestuurd.</td>
+<td>
+<a class="link" href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak">VlakOfMultivlak</a>
+</td>
+<td>
+0..1</td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -358,8 +377,7 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie</a>
-</td>
+<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -437,8 +455,7 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein</a>
-</td>
+<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -622,6 +639,71 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 </tbody>
 </table>
 </section>
+<section class="notoc" id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie_zonder_binnenwateren">
+<h6>geometrieZonderBinnenwateren</h6>
+<table style="width: 100%">
+<colgroup style="width: 30%"></colgroup>
+<colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#geometrieZonderBinnenwateren</td>
+</tr>
+<tr>
+<th>Naam</th>
+<td>geometrieZonderBinnenwateren</td>
+</tr>
+<tr>
+<th>Herkomst</th>
+<td>LGM-BG</td>
+</tr>
+<tr>
+<th>Definitie</th>
+<td>Geometrische representatie van een gebied op land (zonder binnenwateren) dat door een openbaar lichaam wordt bestuurd.</td>
+</tr>
+<tr>
+<th>Herkomst definitie</th>
+<td>LGM-BG</td>
+</tr>
+<tr>
+<th>Datum opname</th>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<th>Identificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>heeft tijdlijn geldigheid</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>heeft tijdlijn registratie</th>
+<td>Ja</td>
+</tr>
+<tr>
+<th>Kardinaliteit</th>
+<td>0..1</td>
+</tr>
+<tr>
+<th>Authentiek</th>
+<td>Overig</td>
+</tr>
+<tr>
+<th>Indicatie afleidbaar</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Indicatie classificerend</th>
+<td>Nee</td>
+</tr>
+<tr>
+<th>Mogelijk geen waarde</th>
+<td>Nee</td>
+</tr>
+<tbody>
+</tbody>
+</table>
+</section>
 </section>
 
 <section class="notoc">
@@ -658,8 +740,7 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratiegegevens">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratiegegevens</a>
-</td>
+<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratiegegevens">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratiegegevens</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -755,8 +836,7 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/maritieme_zone">http://begrippen.geostandaarden.nl/bg/id/begrip/maritieme_zone</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/maritieme_zone">http://begrippen.geostandaarden.nl/bg/id/begrip/maritieme_zone</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -772,9 +852,13 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_maritieme_zone_generalisatie_bestuurlijk_gebied" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#MaritiemeZone.generalisatie-BestuurlijkGebied</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -832,8 +916,7 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/gemeentegebied">http://begrippen.geostandaarden.nl/bg/id/begrip/gemeentegebied</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/gemeentegebied">http://begrippen.geostandaarden.nl/bg/id/begrip/gemeentegebied</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -849,9 +932,13 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z|0-9|_|.|-|\/|:|]</t
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_gemeentegebied_generalisatie_bestuurlijk_gebied" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#Gemeentegebied.generalisatie-BestuurlijkGebied</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -1234,8 +1321,7 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/provinciegebied">http://begrippen.geostandaarden.nl/bg/id/begrip/provinciegebied</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/provinciegebied">http://begrippen.geostandaarden.nl/bg/id/begrip/provinciegebied</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -1251,9 +1337,13 @@ Relatie die aangeeft dat dit object een gemeentegebied van een regionaal openbaa
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_provinciegebied_generalisatie_bestuurlijk_gebied" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#Provinciegebied.generalisatie-BestuurlijkGebied</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -1531,8 +1621,7 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/landgebied">http://begrippen.geostandaarden.nl/bg/id/begrip/landgebied</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/landgebied">http://begrippen.geostandaarden.nl/bg/id/begrip/landgebied</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -1548,9 +1637,13 @@ Relatie die aangeeft dat dit object een provinciegebied van een regionaal openba
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_landgebied_generalisatie_bestuurlijk_gebied" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#Landgebied.generalisatie-BestuurlijkGebied</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -1659,7 +1752,7 @@ Relatie die aangeeft dat dit object een landgebied van een regionaal openbaar li
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1</td>
+<td>1..*</td>
 </tr>
 <tr>
 <th>Unidirectioneel</th>
@@ -1735,8 +1828,7 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/waterschapsgebied">http://begrippen.geostandaarden.nl/bg/id/begrip/waterschapsgebied</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/waterschapsgebied">http://begrippen.geostandaarden.nl/bg/id/begrip/waterschapsgebied</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -1752,9 +1844,13 @@ Deze grens is inclusief de grote wateren die niet door de waterschappen beheerd 
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_waterschapsgebied_generalisatie_bestuurlijk_gebied" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#Waterschapsgebied.generalisatie-BestuurlijkGebied</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -1931,8 +2027,7 @@ Relatie die aangeeft dat dit object een waterschapsgebied van een regionaal open
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregiogebied">http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregiogebied</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregiogebied">http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregiogebied</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -1948,9 +2043,13 @@ Relatie die aangeeft dat dit object een waterschapsgebied van een regionaal open
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_veiligheidsregiogebied_generalisatie_bestuurlijk_gebied" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#Veiligheidsregiogebied.generalisatie-BestuurlijkGebied</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -2137,8 +2236,7 @@ Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebi
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_territoriale_zee">http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_territoriale_zee</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_territoriale_zee">http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_territoriale_zee</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -2154,9 +2252,13 @@ Dit gebied is ook wel bekend als “de 12-mijlszone”. In het Eems-Dollard gebi
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_territoriale_zee_generalisatie_maritieme_zone" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#TerritorialeZee.generalisatie-MaritiemeZone</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -2265,7 +2367,7 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1</td>
+<td>1..*</td>
 </tr>
 <tr>
 <th>Unidirectioneel</th>
@@ -2341,8 +2443,7 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_aansluitende_zone">http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_aansluitende_zone</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_aansluitende_zone">http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_aansluitende_zone</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -2358,9 +2459,13 @@ Relatie die aangeeft dat dit object een territoriale zee van een regionaal openb
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_aansluitende_zone_generalisatie_maritieme_zone" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#AansluitendeZone.generalisatie-MaritiemeZone</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -2469,7 +2574,7 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1</td>
+<td>1..*</td>
 </tr>
 <tr>
 <th>Unidirectioneel</th>
@@ -2545,8 +2650,7 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_exclusieve_economische_zone">http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_exclusieve_economische_zone</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_exclusieve_economische_zone">http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_exclusieve_economische_zone</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -2562,9 +2666,13 @@ Relatie die aangeeft dat dit object een aansluitende zone van een regionaal open
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_exclusieve_economische_zone_generalisatie_maritieme_zone" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#ExclusieveEconomischeZone.generalisatie-MaritiemeZone</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -2673,7 +2781,7 @@ Relatie die aangeeft dat dit object een exclusieve economische zone van een regi
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1</td>
+<td>1..*</td>
 </tr>
 <tr>
 <th>Unidirectioneel</th>
@@ -2751,8 +2859,7 @@ Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlan
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_continentaal_plat">http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_continentaal_plat</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_continentaal_plat">http://begrippen.geostandaarden.nl/bg/id/begrip/nederlandse_continentaal_plat</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -2768,9 +2875,13 @@ Binnen het Europese deel van het Rijk kent deze dezelfde contour als de Nederlan
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_continentaal_plat_generalisatie_maritieme_zone" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#ContinentaalPlat.generalisatie-MaritiemeZone</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -2879,7 +2990,7 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 </tr>
 <tr>
 <th>Kardinaliteit relatie bron</th>
-<td>1</td>
+<td>1..*</td>
 </tr>
 <tr>
 <th>Unidirectioneel</th>
@@ -3008,8 +3119,7 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/levensfase">http://begrippen.geostandaarden.nl/bg/id/begrip/levensfase</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/levensfase">http://begrippen.geostandaarden.nl/bg/id/begrip/levensfase</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -3029,23 +3139,29 @@ Relatie die aangeeft dat dit object een continentaal plat van een regionaal open
   <th>Waarde</th>
   <th>Definitie</th>
 </tr>
-<tr>
+<tr id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte_enumeratiewaarde_vastgesteld">
 <td>
 Vastgesteld</td>
 <td>
 Object dat door het bevoegd gezag is benoemd of afgebakend op grond van wet- of regelgeving.</td>
-<tr>
+</tr>
+<tr id="informatiemodel_lgm_bg_domein_bestuurlijk_gebied_enumeratie_status_registratieve_ruimte_enumeratiewaarde_ingetrokken">
 <td>
 Ingetrokken</td>
 <td>
 Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgeving.</td>
+</tr>
 </tbody>
 </table>
 
 </section>
 
-## Domein Registratiegegevens
-![Domein Registratiegegevens](data/LGM-BG/Registratiegegevens/Package%20View.png "Domein Registratiegegevens")
+## Domein Registratiegegevens {#informatiemodel_lgm_bg_domein_registratiegegevens}
+
+<figure data-md-diagram="98ada092-c234-36ce-8bfe-d1e4442b5d05">
+<div data-include="data/model/registratiegegevens/package-view.svg" data-include-format="html"><img src="data/model/registratiegegevens/package-view.png" alt="Domein Registratiegegevens" loading="lazy"></div>
+<figcaption>Domein Registratiegegevens</figcaption>
+</figure>
 
 ### Objecttypen
 
@@ -3077,8 +3193,7 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie ">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie </a>
-</td>
+<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie ">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie </a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -3094,9 +3209,13 @@ Object dat door het bevoegd gezag is ingetrokken op grond van wet- of regelgevin
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_generalisatie_entiteit" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#Registratie.generalisatie-Entiteit</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -3228,24 +3347,12 @@ Eind van de periode dat deze versie van het informatieobject actueel is in de re
 </tr>
 <tr>
 <td>
-<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_verantwoordelijke_partij">verantwoordelijkePartij</a>
-</td>
-<td>
-Een verantwoordelijke partij is een actor die verantwoordelijk is voor het object.</td>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_actor">Actor</a>
-</td>
-<td>
-1</td>
-</tr>
-<tr>
-<td>
 <a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_afgeleid_van">afgeleidVan</a>
 </td>
 <td>
 Een afleiding is een transformatie van een entiteit naar een andere, een update van een entiteit die resulteert in een nieuwe entiteit, of de constructie van een nieuwe entiteit op basis van een reeds bestaande entiteit.</td>
 <td>
-<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit">Bronentiteit</a>
+<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument">Brondocument</a>
 </td>
 <td>
 0..*</td>
@@ -3284,8 +3391,7 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie</a>
-</td>
+<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -3293,7 +3399,7 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 </tr>
 <tr>
 <th>Identificerend</th>
-<td>Nee</td>
+<td>Ja</td>
 </tr>
 <tr>
 <th>heeft tijdlijn geldigheid</th>
@@ -3436,8 +3542,7 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid</a>
-</td>
+<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -3511,8 +3616,7 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid</a>
-</td>
+<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -3586,8 +3690,7 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie</a>
-</td>
+<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -3661,8 +3764,7 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie</a>
-</td>
+<a href="http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie">http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -3708,91 +3810,6 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 
 <section class="notoc">
 <h5>Details Relatiesoorten</h5>
-<section class="notoc" id="informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_verantwoordelijke_partij">
-<h6>verantwoordelijkePartij</h6>
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tr>
-<th>Identificatie</th>
-<td>http://www.w3.org/ns/prov#wasAttributedTo</td>
-</tr>
-<tr>
-<th>Naam</th>
-<td>verantwoordelijkePartij</td>
-</tr>
-<tr>
-<th>Herkomst</th>
-<td>LGM-BG</td>
-</tr>
-<tr>
-<th>Definitie</th>
-<td>Een verantwoordelijke partij is een actor die verantwoordelijk is voor het object.</td>
-</tr>
-<tr>
-<th>Herkomst definitie</th>
-<td>PROV-O</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2026-02-04</td>
-</tr>
-<tr>
-<th>Identificerend</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>heeft tijdlijn geldigheid</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>heeft tijdlijn registratie</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>Kardinaliteit</th>
-<td>1</td>
-</tr>
-<tr>
-<th>Kardinaliteit relatie bron</th>
-<td>0..*</td>
-</tr>
-<tr>
-<th>Unidirectioneel</th>
-<td>Ja</td>
-</tr>
-<tr>
-<th>Aggregatietype</th>
-<td>Geen</td>
-</tr>
-<tr>
-<th>Authentiek</th>
-<td>Overig</td>
-</tr>
-<tr>
-<th>Indicatie afleidbaar</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>Mogelijk geen waarde</th>
-<td>Nee</td>
-</tr>
-<tr>
-<th>Bron</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie">Registratie</a>
-</td>
-</tr>
-<tr>
-<th>Doel</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_actor">Actor</a>
-</td>
-</tr>
-<tbody>
-</tbody>
-</table>
-</section>
 <section class="notoc" id="informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_afgeleid_van">
 <h6>afgeleidVan</h6>
 <table style="width: 100%">
@@ -3871,80 +3888,13 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <tr>
 <th>Doel</th>
 <td>
-<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit">Bronentiteit</a>
+<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument">Brondocument</a>
 </td>
 </tr>
 <tbody>
 </tbody>
 </table>
 </section>
-</section>
-
-#### Bronentiteit {#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit}
-
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tr>
-<th>Identificatie</th>
-<td>http://modellen.geostandaarden.nl/def/bg#Bronentiteit</td>
-</tr>
-<tr>
-<th>Naam</th>
-<td>Bronentiteit</td>
-</tr>
-<tr>
-<th>Herkomst</th>
-<td>LGM-BG</td>
-</tr>
-<tr>
-<th>Definitie</th>
-<td>Een bronentiteit is een entiteit waaraan een ander object ter herleiden is.</td>
-</tr>
-<tr>
-<th>Herkomst definitie</th>
-<td>LGM-BG</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2026-02-04</td>
-</tr>
-<tr>
-<th>Indicatie abstract object</th>
-<td>Ja</td>
-</tr>
-<tbody>
-</tbody>
-</table>
-
-<section class="notoc">
-<h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
-<colgroup style="width: 30%"></colgroup>
-<colgroup style="width: 70%"></colgroup>
-<tr>
-<th>Subtype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit">Bronentiteit</a>
-</td>
-</tr>
-<tr>
-<th>Supertype</th>
-<td>
-<a class="link" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_entiteit">Entiteit</a>
-</td>
-</tr>
-<tr>
-<th>Datum opname</th>
-<td>2026-02-04</td>
-</tr>
-<tr>
-<th>Mixin</th>
-<td>Nee</td>
-</tr>
-<tbody>
-</tbody>
-</table>
 </section>
 
 #### Brondocument {#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument}
@@ -3986,9 +3936,13 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument_generalisatie_entiteit" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://modellen.geostandaarden.nl/def/bg#Brondocument.generalisatie-Entiteit</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -3998,7 +3952,7 @@ Een afleiding is een transformatie van een entiteit naar een andere, een update 
 <tr>
 <th>Supertype</th>
 <td>
-<a class="link" href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_bronentiteit">Bronentiteit</a>
+<a class="link" href="#informatiemodel_lgm_bg_view_prov_o_objecttype_entiteit">Entiteit</a>
 </td>
 </tr>
 <tr>
@@ -4239,23 +4193,29 @@ De datum van het brondocument op basis waarvan een opname, mutatie of een verwij
   <th>Waarde</th>
   <th>Definitie</th>
 </tr>
-<tr>
+<tr id="informatiemodel_lgm_bg_domein_registratiegegevens_enumeratie_status_registratie_enumeratiewaarde_actief">
 <td>
 Actief</td>
 <td>
 Indicatie dat het informatieobject actief is in de registratie.</td>
-<tr>
+</tr>
+<tr id="informatiemodel_lgm_bg_domein_registratiegegevens_enumeratie_status_registratie_enumeratiewaarde_afgevoerd">
 <td>
 Afgevoerd</td>
 <td>
 Indicatie dat het informatieobject uit de registratie is afgevoerd.</td>
+</tr>
 </tbody>
 </table>
 
 </section>
 
-## View TOOI - Thesaurus en Ontologie Overheidsinformatie
-![View TOOI - Thesaurus en Ontologie Overheidsinformatie](data/LGM-BG/TOOI%20-%20Thesaurus%20en%20Ontologie%20Overheidsinformatie/Package%20View.png "View TOOI - Thesaurus en Ontologie Overheidsinformatie")
+## View TOOI - Thesaurus en Ontologie Overheidsinformatie {#informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie}
+
+<figure data-md-diagram="4aa3f909-f9d8-37bd-9d1f-33bf97e67eed">
+<div data-include="data/model/tooi-thesaurus-en-ontologie-overheidsinformatie/package-view.svg" data-include-format="html"><img src="data/model/tooi-thesaurus-en-ontologie-overheidsinformatie/package-view.png" alt="View TOOI - Thesaurus en Ontologie Overheidsinformatie" loading="lazy"></div>
+<figcaption>View TOOI - Thesaurus en Ontologie Overheidsinformatie</figcaption>
+</figure>
 
 ### Objecttypen
 
@@ -4287,8 +4247,7 @@ Indicatie dat het informatieobject uit de registratie is afgevoerd.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/overheidsorganisatie">http://begrippen.geostandaarden.nl/bg/id/begrip/overheidsorganisatie</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/overheidsorganisatie">http://begrippen.geostandaarden.nl/bg/id/begrip/overheidsorganisatie</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -4304,9 +4263,13 @@ Indicatie dat het informatieobject uit de registratie is afgevoerd.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_overheidsorganisatie_generalisatie_organisatie" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>https://identifier.overheid.nl/tooi/def/ont/Overheidsorganisatie.generalisatie-Organisatie</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -4716,8 +4679,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/organisatiecode">http://begrippen.geostandaarden.nl/bg/id/begrip/organisatiecode</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/organisatiecode">http://begrippen.geostandaarden.nl/bg/id/begrip/organisatiecode</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -4797,8 +4759,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/regionaal_openbaar_lichaam">http://begrippen.geostandaarden.nl/bg/id/begrip/regionaal_openbaar_lichaam</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/regionaal_openbaar_lichaam">http://begrippen.geostandaarden.nl/bg/id/begrip/regionaal_openbaar_lichaam</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -4814,9 +4775,13 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_regionaal_openbaar_lichaam_generalisatie_overheidsorganisatie" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>https://identifier.overheid.nl/tooi/def/ont/RegionaalOpenbaarLichaam.generalisatie-Overheidsorganisatie</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -4874,8 +4839,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/openbaar_lichaam_uit_gemeenschappelijke_regeling">http://begrippen.geostandaarden.nl/bg/id/begrip/openbaar_lichaam_uit_gemeenschappelijke_regeling</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/openbaar_lichaam_uit_gemeenschappelijke_regeling">http://begrippen.geostandaarden.nl/bg/id/begrip/openbaar_lichaam_uit_gemeenschappelijke_regeling</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -4891,9 +4855,13 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_openbaar_lichaam_uit_gemeenschappelijke_regeling_generalisatie_regionaal_openbaar_lichaam" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>https://identifier.overheid.nl/tooi/def/ont/OpenbaarLichaamUitGemeenschappelijkeRegeling.generalisatie-RegionaalOpenbaarLichaam</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -4947,8 +4915,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/gemeente">http://begrippen.geostandaarden.nl/bg/id/begrip/gemeente</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/gemeente">http://begrippen.geostandaarden.nl/bg/id/begrip/gemeente</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -4964,9 +4931,13 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_gemeente_generalisatie_regionaal_openbaar_lichaam" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>https://identifier.overheid.nl/tooi/def/ont/Gemeente.generalisatie-RegionaalOpenbaarLichaam</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -5020,8 +4991,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/provincie">http://begrippen.geostandaarden.nl/bg/id/begrip/provincie</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/provincie">http://begrippen.geostandaarden.nl/bg/id/begrip/provincie</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -5037,9 +5007,13 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_provincie_generalisatie_regionaal_openbaar_lichaam" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>https://identifier.overheid.nl/tooi/def/ont/Provincie.generalisatie-RegionaalOpenbaarLichaam</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -5097,8 +5071,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/rijk">http://begrippen.geostandaarden.nl/bg/id/begrip/rijk</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/rijk">http://begrippen.geostandaarden.nl/bg/id/begrip/rijk</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -5114,9 +5087,13 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_rijk_generalisatie_regionaal_openbaar_lichaam" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>https://identifier.overheid.nl/tooi/def/ont/Rijk.generalisatie-RegionaalOpenbaarLichaam</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -5170,8 +5147,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/waterschap">http://begrippen.geostandaarden.nl/bg/id/begrip/waterschap</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/waterschap">http://begrippen.geostandaarden.nl/bg/id/begrip/waterschap</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -5187,9 +5163,13 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_waterschap_generalisatie_regionaal_openbaar_lichaam" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>https://identifier.overheid.nl/tooi/def/ont/Waterschap.generalisatie-RegionaalOpenbaarLichaam</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -5243,8 +5223,7 @@ De organisatiecode.</td>
 <tr>
 <th>Begrip</th>
 <td>
-<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregio">http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregio</a>
-</td>
+<a href="http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregio">http://begrippen.geostandaarden.nl/bg/id/begrip/veiligheidsregio</a></td>
 </tr>
 <tr>
 <th>Datum opname</th>
@@ -5260,9 +5239,13 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_view_tooi_thesaurus_en_ontologie_overheidsinformatie_objecttype_veiligheidsregio_generalisatie_openbaar_lichaam_uit_gemeenschappelijke_regeling" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>https://identifier.overheid.nl/tooi/def/ont/Veiligheidsregio.generalisatie-OpenbaarLichaamUitGemeenschappelijkeRegeling</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -5288,8 +5271,12 @@ De organisatiecode.</td>
 </table>
 </section>
 
-## View PROV-O
-![View PROV-O](data/LGM-BG/PROV-O/Package%20View.png "View PROV-O")
+## View PROV-O {#informatiemodel_lgm_bg_view_prov_o}
+
+<figure data-md-diagram="ac43bc70-70d3-3601-8785-ebd0398d1368">
+<div data-include="data/model/prov-o/package-view.svg" data-include-format="html"><img src="data/model/prov-o/package-view.png" alt="View PROV-O" loading="lazy"></div>
+<figcaption>View PROV-O</figcaption>
+</figure>
 
 ### Objecttypen
 
@@ -5406,9 +5393,13 @@ De organisatiecode.</td>
 
 <section class="notoc">
 <h5>Overzicht generalisaties</h5>
-<table style="width: 100%">
+<table id="informatiemodel_lgm_bg_view_prov_o_objecttype_organisatie_generalisatie_actor" style="width: 100%">
 <colgroup style="width: 30%"></colgroup>
 <colgroup style="width: 70%"></colgroup>
+<tr>
+<th>Identificatie</th>
+<td>http://www.w3.org/ns/prov#Organisatie.generalisatie-Actor</td>
+</tr>
 <tr>
 <th>Subtype</th>
 <td>
@@ -5433,3 +5424,4 @@ De organisatiecode.</td>
 </tbody>
 </table>
 </section>
+

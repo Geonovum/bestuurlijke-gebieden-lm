@@ -10,13 +10,13 @@ Het LGM-BG volgt hier de richtlijnen van [[NEN3610-2022]]. De identificatie iden
 
 Daarnaast is het van belang dat de identificatie betekenisloos is. Dit betekent dat de identificatie geen informatie mag bevatten over het domeinobject zelf, zoals bijvoorbeeld de locatie, de eigenaar of de tijd van ontstaan. Dit voorkomt dat de identificatie moet worden aangepast als deze informatie verandert.
 
-Een identificatie is permanent en identificeert een domeinobject in de beschouwde werkelijkheid, onafhankelijk van de gegevens die erover verwerkt worden. Gedurende de gehele levenscyclus van een domeinobject blijft de identificatie gelijk. De identificatie van een domeinobject identificeert dus niet een gegevensobject of een versie daarvan. Voor het identificeren van een specifieke versie van de gegevens over een domeinobject wordt gebruik gemaakt van eigenschappen beschreven in [[[#domein-registratiegegevens]]].
+Een identificatie is permanent en identificeert een domeinobject in de beschouwde werkelijkheid, onafhankelijk van de gegevens die erover verwerkt worden. Gedurende de gehele levenscyclus van een domeinobject blijft de identificatie gelijk. De identificatie van een domeinobject identificeert dus niet een gegevensobject of een versie daarvan. Voor het identificeren van een specifieke versie van de gegevens over een domeinobject wordt gebruik gemaakt van eigenschappen beschreven in [[[#informatiemodel_lgm_bg_domein_registratiegegevens]]].
 
 ### Identificatie en Domein (namespace) attributen
 
 In [[NEN3610-2022]] wordt beschreven dat de identificatie uniek moet zijn binnen een bepaald domein. Dit betekent dat de identificatie alleen uniek is binnen een bepaalde context, zoals een organisatie of een systeem. Om ervoor te zorgen dat de identificatie overal uniek is, wordt er gebruik gemaakt van een domein attribuut.
 
-Een domein attribuut heeft als datatype een URI. De URI verwijst naar de context waarin de identificatie uniek is. Door het domein attribuut te combineren met de identificatie, wordt ervoor gezorgd dat de identificatie overal uniek is.
+Het domein attribuut heeft als datatype een URI die verwijst naar de context waarin de identificatie uniek is. In het model is het attribuut `domein` gedefinieerd als `CharacterString`, conform [[NEN3610-2022]]. Door het domein attribuut te combineren met de identificatie, wordt ervoor gezorgd dat de identificatie overal uniek is.
 
 <figure>
   <img src="media/nen3610-identificatie.png" alt="NEN 3610 identificatie">
@@ -40,7 +40,9 @@ De statussen `Ontwerp` en `Niet gerealiseerd` worden in dit logisch model niet o
 
 Voor de representatie van de locatie en vorm van bestuurlijke gebieden worden in dit model geometrieën gebruikt. Het [[CIM-BG]] beschrijft uitgebreid de <a data-cite="CIM-BG#geometrie">uitgangspunten voor geometrie</a>, waaronder geometrietypen, dimensies en ruimtelijke relaties. Deze uitgangspunten zijn ook van toepassing op het LGM-BG.
 
-Bestuurlijke gebieden worden tweedimensionaal vastgelegd. 3D- of 2.5D-geometrieën worden in dit model niet gebruikt. In het logisch model is het geometrietype voor bestuurlijke gebieden gedefinieerd als `VlakOfMultivlak`: een keuze tussen `GM_Surface` (vlak) of `GM_MultiSurface` (multivlak). Dit zijn tweedimensionale geometrietypen uit [[ISO-19107-2019]], conform de [[ISO-19125]] Simple Features standaard.
+Bestuurlijke gebieden worden tweedimensionaal vastgelegd. 3D- of 2.5D-geometrieën worden in dit model niet gebruikt. In het logisch model is het geometrietype voor bestuurlijke gebieden gedefinieerd als [`VlakOfMultivlak`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_keuze_datatype__vlak_of_multivlak): een keuze tussen `GM_Surface` (vlak) of `GM_MultiSurface` (multivlak). Dit zijn tweedimensionale geometrietypen uit [[ISO-19107-2019]], conform de [[ISO-19125]] Simple Features standaard.
+
+Elk [`BestuurlijkGebied`](#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied) heeft een verplichte `geometrie`. Daarnaast kan optioneel een `geometrieZonderBinnenwateren` worden opgenomen: de geometrische representatie van het gebied op land zonder de binnenwateren. Beide attributen hebben het type `VlakOfMultivlak`.
 
 Het model hanteert uitsluitend expliciete geometrie en lineaire interpolatie; bogen zijn niet toegestaan. Zie [[GIMEG]] voor een uitgebreidere toelichting op de toepassing van ISO 19107-geometrietypen.
 
@@ -88,7 +90,7 @@ In de BVBG worden gegevens geregistreerd over bestuurlijke gebieden. Voor elk do
 - Tijdlijn registratie
 - Herkomst en bronverwijzing
 
-Deze registratiegegevens zijn afgeleid van de registratiegegevens zoals beschreven in [[NEN3610-2022]], [[PROV-O]] en [[EMSO]]. De volgende paragrafen lichten deze registratiegegevens verder toe. Zie het [informatiemodel](#domein-registratiegegevens) voor de volledige specificatie van het domein Registratiegegevens.
+Deze registratiegegevens zijn afgeleid van de registratiegegevens zoals beschreven in [[NEN3610-2022]], [[PROV-O]] en [[EMSO]]. De volgende paragrafen lichten deze registratiegegevens verder toe. Zie het [informatiemodel](#informatiemodel_lgm_bg_domein_registratiegegevens) voor de volledige specificatie van het domein Registratiegegevens.
 
 ### Versie, tijdlijn geldigheid en tijdlijn registratie
 
@@ -101,8 +103,8 @@ De **registratietijdlijn** beschrijft de periode waarin een gegevensobject in de
 Een domeinobject heeft gedurende zijn levenscyclus op ieder moment in de gecombineerde tijdlijn geldigheid en registratie minimaal één gegevensobject.
 
 <figure>
-  <img src="data/LGM-BG/Registratiegegevens/Package%20View.png" alt="NEN 3610 Registratiegegevens">
-  <figcaption>Registratiegegevens in NEN 3610:2022</figcaption>
+  <div data-include="data/model/registratiegegevens/package-view.svg" data-include-format="html"><img src="data/model/registratiegegevens/package-view.png" alt="Domein Registratiegegevens" loading="lazy"></div>
+  <figcaption>Domein Registratiegegevens in het LGM-BG</figcaption>
 </figure>
 
 Met behulp van de tijdlijn geldigheid kan een afnemer bepalen welke gegevens *actueel* (nu geldig) zijn:
@@ -125,12 +127,11 @@ Er mag maar één gegevensobject zijn met de registratiestatus `Actief` op een b
 
 ### Herkomst en bronverwijzing
 
-Voor elk gegevensobject wordt opgenomen waar de gegevens vandaan komen en hoe deze tot stand zijn gekomen. Dit gebeurt door het registreren van herkomst- en bronverwijzingen. De herkomst maakt het mogelijk om de oorspronkelijke bronhouder en het gebruikte brondocument te identificeren.
+Voor elk gegevensobject wordt opgenomen waar de gegevens vandaan komen en hoe deze tot stand zijn gekomen. Dit gebeurt door het registreren van herkomst- en bronverwijzingen. De herkomst maakt het mogelijk om het gebruikte brondocument te identificeren.
 
 Het herkomstmodel in het LGM-BG is gebaseerd op de W3C standaard [[PROV-O]]. Door aansluiting op PROV-O is het mogelijk om op een gestandaardiseerde en interoperabele manier de herkomst en bronverwijzingen van gegevensobjecten te registreren en te interpreteren. In het model is de minimale set van herkomst- en bronverwijzingen opgenomen:
 
-- `afgeleidVan`: Een verwijzing naar de bronentiteit (bijvoorbeeld een brondocument) op basis waarvan het gegevensobject tot stand is gekomen.
-- `verantwoordelijkePartij`: De actor die verantwoordelijk is voor de gegevens over het domeinobject.
+- `afgeleidVan`: Een verwijzing naar het [`Brondocument`](#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument) op basis waarvan het gegevensobject tot stand is gekomen.
 
 ## Afleidbare eigenschappen
 

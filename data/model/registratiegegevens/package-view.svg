@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 957 987" width="957" height="987" role="group" aria-label="Package View (Registratiegegevens)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, &apos;Segoe UI&apos;, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="md-98ada092-c234-36ce-8bfe-d1e4442b5d05-triangle-filled" markerWidth="20" markerHeight="20" refX="20" refY="10" orient="auto" markerUnits="strokeWidth">
+      <line x1="16" y1="10" x2="20" y2="10" fill="none" stroke="white" stroke-width="2"/>
+      <path d="M 6 4 L 19 10 L 6 16 L 10 10 Z" fill="#4b5563" stroke="#4b5563" stroke-width="1"/>
+    </marker>
+    <marker id="md-98ada092-c234-36ce-8bfe-d1e4442b5d05-triangle-hollow" markerWidth="24" markerHeight="24" refX="24" refY="12" orient="auto" markerUnits="strokeWidth">
+      <line x1="20" y1="12" x2="24" y2="12" fill="none" stroke="white" stroke-width="2"/>
+      <path d="M 6 2 L 22 12 L 6 22 Z" fill="white" stroke="#4b5563" stroke-width="2"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="957" height="987" fill="#ffffff"/>
+  <g data-md-element="1175a33f-154d-44dd-b322-51173154b70b">
+    <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_afgeleid_van">
+      <title>⁨«Relatiesoort» afgeleidVan⁩ (⁨Registratie⁩ → ⁨Brondocument⁩)</title>
+      <desc>⁨Registratie⁩: ⁨0..*⁩; ⁨Brondocument⁩: ⁨0..*⁩</desc>
+      <path d="M236 445.5L 236,423.5Q 236,418.5 231,418.5L 165,418.5Q 160,418.5 160,413.5L160 324.5" fill="none" stroke="#4b5563" stroke-width="1" marker-end="url(#md-98ada092-c234-36ce-8bfe-d1e4442b5d05-triangle-filled)"/>
+      <path d="M236 445.5L 236,423.5Q 236,418.5 231,418.5L 165,418.5Q 160,418.5 160,413.5L160 324.5" fill="none" stroke="#4b5563" stroke-width="10" visibility="hidden" pointer-events="stroke"/>
+    </a>
+  </g>
+  <g data-md-element="133a8d3f-855e-4d74-9612-a0adc097d43c">
+    <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument_generalisatie_entiteit">
+      <title>⁨«Generalisatie»⁩ (⁨Brondocument⁩ → ⁨Entiteit⁩)</title>
+      <path d="M160 202.5L 160,130.5Q 160,125.5 165,125.5L 201,125.5Q 206,125.5 206,120.5L206 85.5" fill="none" stroke="#4b5563" stroke-width="1" marker-end="url(#md-98ada092-c234-36ce-8bfe-d1e4442b5d05-triangle-hollow)"/>
+      <path d="M160 202.5L 160,130.5Q 160,125.5 165,125.5L 201,125.5Q 206,125.5 206,120.5L206 85.5" fill="none" stroke="#4b5563" stroke-width="10" visibility="hidden" pointer-events="stroke"/>
+    </a>
+  </g>
+  <g data-md-element="7e88bf29-5372-4683-8c03-f2be7adb3596">
+    <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_generalisatie_entiteit">
+      <title>⁨«Generalisatie»⁩ (⁨Registratie⁩ → ⁨Entiteit⁩)</title>
+      <path d="M392 445.5L 392,145.5Q 392,140.5 387,140.5L 351,140.5Q 346,140.5 346,135.5L346 85.5" fill="none" stroke="#4b5563" stroke-width="1" marker-end="url(#md-98ada092-c234-36ce-8bfe-d1e4442b5d05-triangle-hollow)"/>
+      <path d="M392 445.5L 392,145.5Q 392,140.5 387,140.5L 351,140.5Q 346,140.5 346,135.5L346 85.5" fill="none" stroke="#4b5563" stroke-width="10" visibility="hidden" pointer-events="stroke"/>
+    </a>
+  </g>
+  <g data-md-element="3a8b8b69-9b22-4f15-bae6-999a485daed9">
+    <a href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_geregistreerd_met">
+      <title>⁨«Relatiesoort» geregistreerdMet⁩ (⁨BestuurlijkGebied⁩ → ⁨Registratie⁩)</title>
+      <desc>⁨BestuurlijkGebied⁩: ⁨1⁩; ⁨Registratie⁩: ⁨1⁩</desc>
+      <path d="M314 768.5L314 647.5" fill="none" stroke="#4b5563" stroke-width="1" marker-end="url(#md-98ada092-c234-36ce-8bfe-d1e4442b5d05-triangle-filled)"/>
+      <path d="M314 768.5L314 647.5" fill="none" stroke="#4b5563" stroke-width="10" visibility="hidden" pointer-events="stroke"/>
+    </a>
+  </g>
+  <g data-md-element="1175a33f-154d-44dd-b322-51173154b70b">
+    <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_relatiesoort_afgeleid_van">
+      <title>⁨«Relatiesoort» afgeleidVan⁩ (⁨Registratie⁩ → ⁨Brondocument⁩)</title>
+      <g>
+        <rect x="121.5" y="362" width="77.2" height="36.38" fill="#ffffff"/>
+        <text x="123.5" y="375" font-size="10.8" fill="#000000" textLength="73.2" lengthAdjust="spacingAndGlyphs">«Relatiesoort»</text>
+        <text x="130.03" y="391.19" font-size="10.8" fill="#000000" textLength="60.14" lengthAdjust="spacingAndGlyphs">afgeleidVan</text>
+      </g>
+      <g>
+        <text x="246" y="439.5" font-size="10.8" fill="#000000" textLength="18.17" lengthAdjust="spacingAndGlyphs">0..*</text>
+      </g>
+      <g>
+        <text x="132" y="336.5" font-size="10.8" fill="#000000" textLength="18.17" lengthAdjust="spacingAndGlyphs">0..*</text>
+      </g>
+    </a>
+  </g>
+  <g data-md-element="133a8d3f-855e-4d74-9612-a0adc097d43c">
+    <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument_generalisatie_entiteit">
+      <title>⁨«Generalisatie»⁩ (⁨Brondocument⁩ → ⁨Entiteit⁩)</title>
+      <g>
+        <rect x="118.5" y="135" width="83.17" height="20.19" fill="#ffffff"/>
+        <text x="120.5" y="148" font-size="10.8" fill="#000000" textLength="79.17" lengthAdjust="spacingAndGlyphs">«Generalisatie»</text>
+      </g>
+    </a>
+  </g>
+  <g data-md-element="7e88bf29-5372-4683-8c03-f2be7adb3596">
+    <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_generalisatie_entiteit">
+      <title>⁨«Generalisatie»⁩ (⁨Registratie⁩ → ⁨Entiteit⁩)</title>
+      <g>
+        <rect x="350" y="248.5" width="83.17" height="20.19" fill="#ffffff"/>
+        <text x="352" y="261.5" font-size="10.8" fill="#000000" textLength="79.17" lengthAdjust="spacingAndGlyphs">«Generalisatie»</text>
+      </g>
+    </a>
+  </g>
+  <g data-md-element="3a8b8b69-9b22-4f15-bae6-999a485daed9">
+    <a href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_relatiesoort_geregistreerd_met">
+      <title>⁨«Relatiesoort» geregistreerdMet⁩ (⁨BestuurlijkGebied⁩ → ⁨Registratie⁩)</title>
+      <g>
+        <rect x="267.75" y="685" width="92.13" height="36.38" fill="#ffffff"/>
+        <text x="277.2" y="698" font-size="10.8" fill="#000000" textLength="73.2" lengthAdjust="spacingAndGlyphs">«Relatiesoort»</text>
+        <text x="269.75" y="714.19" font-size="10.8" fill="#000000" textLength="88.13" lengthAdjust="spacingAndGlyphs">geregistreerdMet</text>
+      </g>
+      <g>
+        <text x="323.75" y="762.5" font-size="10.8" fill="#000000" textLength="4.41" lengthAdjust="spacingAndGlyphs">1</text>
+      </g>
+      <g>
+        <text x="299.75" y="659.5" font-size="10.8" fill="#000000" textLength="4.41" lengthAdjust="spacingAndGlyphs">1</text>
+      </g>
+    </a>
+  </g>
+  <g data-md-element="41d7d037-cac8-42d0-bce0-5e315338902c">
+    <a href="#informatiemodel_lgm_bg_view_prov_o_objecttype_entiteit">
+      <title>Entiteit</title>
+      <rect x="135.75" y="20" width="280" height="65" rx="2" fill="#f5f7fd"/>
+      <rect x="136.25" y="20.5" width="279" height="64" rx="1.5" fill="none" stroke="#66718b" stroke-width="1"/>
+      <rect x="136.75" y="21" width="278" height="62.5" fill="#66718b"/>
+      <text x="238.8" y="37" font-size="12" font-weight="300" fill="#ffffff" textLength="73.91" lengthAdjust="spacingAndGlyphs">«Objecttype»</text>
+      <text x="245.98" y="58" font-size="18" font-weight="500" fill="#ffffff" textLength="59.53" lengthAdjust="spacingAndGlyphs">Entiteit</text>
+      <text x="234.03" y="75.5" font-size="12" font-weight="300" font-style="italic" fill="#ffffff" textLength="83.42" lengthAdjust="spacingAndGlyphs">(from PROV-O)</text>
+    </a>
+  </g>
+  <g data-md-element="f83437b2-30f5-4bec-857f-e4a883e67ae7">
+    <a href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied">
+      <title>BestuurlijkGebied</title>
+      <rect x="121.25" y="768.5" width="385.39" height="198" rx="2" fill="#f5f7fd"/>
+      <rect x="121.75" y="769" width="384.39" height="197" rx="1.5" fill="none" stroke="#66718b" stroke-width="1"/>
+      <rect x="122.25" y="769.5" width="383.39" height="63.5" fill="#66718b"/>
+      <line x1="122.25" y1="832.5" x2="505.64" y2="832.5" stroke="#66718b" stroke-width="1"/>
+      <text x="276.98" y="785.5" font-size="12" font-weight="300" fill="#ffffff" textLength="73.91" lengthAdjust="spacingAndGlyphs">«Objecttype»</text>
+      <text x="237.84" y="806.5" font-size="18" font-weight="500" fill="#ffffff" textLength="152.19" lengthAdjust="spacingAndGlyphs">BestuurlijkGebied</text>
+      <text x="245.34" y="824" font-size="12" font-weight="300" font-style="italic" fill="#ffffff" textLength="137.19" lengthAdjust="spacingAndGlyphs">(from Bestuurlijk gebied)</text>
+      <text x="130.25" y="853" font-size="12" font-weight="300" fill="#000000" textLength="88.02" lengthAdjust="spacingAndGlyphs">«Attribuutsoort»</text>
+    </a>
+    <g data-md-element="263f9514-bdbd-444d-b0c2-5a2bc5b74b66">
+      <a href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_identificatie">
+        <title>identificatie</title>
+        <text x="130.25" y="872" font-size="14" font-weight="600" fill="#000000" textLength="80.27" lengthAdjust="spacingAndGlyphs">identificatie</text>
+        <text x="210.52" y="872" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="218.98" y="872" font-size="14" fill="#000000" textLength="104.59" lengthAdjust="spacingAndGlyphs">CharacterString</text>
+        <text x="327.58" y="872" font-size="14" fill="#000000" textLength="23.91" lengthAdjust="spacingAndGlyphs">{id}</text>
+      </a>
+    </g>
+    <g data-md-element="a21830ad-fa17-430f-877c-4e1872b974c7">
+      <a href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_domein">
+        <title>domein</title>
+        <text x="130.25" y="892" font-size="14" font-weight="600" fill="#000000" textLength="50.38" lengthAdjust="spacingAndGlyphs">domein</text>
+        <text x="180.63" y="892" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="189.09" y="892" font-size="14" fill="#000000" textLength="104.59" lengthAdjust="spacingAndGlyphs">CharacterString</text>
+        <text x="297.69" y="892" font-size="14" fill="#000000" textLength="23.91" lengthAdjust="spacingAndGlyphs">{id}</text>
+      </a>
+    </g>
+    <g data-md-element="2b2182f3-760a-4d99-9928-d3e623ad7779">
+      <a href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_naam">
+        <title>naam</title>
+        <text x="130.25" y="912" font-size="14" font-weight="600" fill="#000000" textLength="37.25" lengthAdjust="spacingAndGlyphs">naam</text>
+        <text x="167.5" y="912" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="175.97" y="912" font-size="14" fill="#000000" textLength="104.59" lengthAdjust="spacingAndGlyphs">CharacterString</text>
+        <text x="284.56" y="912" font-size="14" fill="#000000" textLength="31.25" lengthAdjust="spacingAndGlyphs">[0..1]</text>
+      </a>
+    </g>
+    <g data-md-element="01c4bc1f-3bd1-4878-9948-f8018e763bdb">
+      <a href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie">
+        <title>geometrie</title>
+        <text x="130.25" y="932" font-size="14" font-weight="600" fill="#000000" textLength="68.98" lengthAdjust="spacingAndGlyphs">geometrie</text>
+        <text x="199.23" y="932" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="207.7" y="932" font-size="14" fill="#000000" textLength="103.86" lengthAdjust="spacingAndGlyphs">VlakOfMultivlak</text>
+      </a>
+    </g>
+    <g data-md-element="951c037e-ba9f-41ca-8f30-9f55832230d1">
+      <a href="#informatiemodel_lgm_bg_domein_bestuurlijk_gebied_objecttype_bestuurlijk_gebied_attribuutsoort_geometrie_zonder_binnenwateren">
+        <title>geometrieZonderBinnenwateren</title>
+        <text x="130.25" y="952" font-size="14" font-weight="600" fill="#000000" textLength="219.81" lengthAdjust="spacingAndGlyphs">geometrieZonderBinnenwateren</text>
+        <text x="350.06" y="952" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="358.53" y="952" font-size="14" fill="#000000" textLength="103.86" lengthAdjust="spacingAndGlyphs">VlakOfMultivlak</text>
+        <text x="466.39" y="952" font-size="14" fill="#000000" textLength="31.25" lengthAdjust="spacingAndGlyphs">[0..1]</text>
+      </a>
+    </g>
+  </g>
+  <g data-md-element="bebe0e08-8e3b-4124-a648-6cd59d21afd8">
+    <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument">
+      <title>Brondocument</title>
+      <rect x="20" y="202.5" width="280" height="122" rx="2" fill="#f5f7fd"/>
+      <rect x="20.5" y="203" width="279" height="121" rx="1.5" fill="none" stroke="#4f73cc" stroke-width="1"/>
+      <rect x="21" y="203.5" width="278" height="47.5" fill="#4f73cc"/>
+      <line x1="21" y1="250.5" x2="299" y2="250.5" stroke="#4f73cc" stroke-width="1"/>
+      <text x="123.05" y="219.5" font-size="12" font-weight="300" fill="#ffffff" textLength="73.91" lengthAdjust="spacingAndGlyphs">«Objecttype»</text>
+      <text x="96.56" y="240.5" font-size="18" font-weight="500" fill="#ffffff" textLength="126.88" lengthAdjust="spacingAndGlyphs">Brondocument</text>
+      <text x="29" y="271" font-size="12" font-weight="300" fill="#000000" textLength="88.02" lengthAdjust="spacingAndGlyphs">«Attribuutsoort»</text>
+    </a>
+    <g data-md-element="a5774da0-eb85-412b-8b45-06a6218e018b">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument_attribuutsoort_identificatie">
+        <title>identificatie</title>
+        <text x="29" y="290" font-size="14" font-weight="600" fill="#000000" textLength="80.27" lengthAdjust="spacingAndGlyphs">identificatie</text>
+        <text x="109.27" y="290" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="117.73" y="290" font-size="14" fill="#000000" textLength="104.59" lengthAdjust="spacingAndGlyphs">CharacterString</text>
+        <text x="226.33" y="290" font-size="14" fill="#000000" textLength="23.91" lengthAdjust="spacingAndGlyphs">{id}</text>
+      </a>
+    </g>
+    <g data-md-element="9ec3fc55-8b05-4bf2-abd8-a2f176f8cded">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_brondocument_attribuutsoort_documentdatum">
+        <title>documentdatum</title>
+        <text x="29" y="310" font-size="14" font-weight="600" fill="#000000" textLength="111.14" lengthAdjust="spacingAndGlyphs">documentdatum</text>
+        <text x="140.14" y="310" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="148.61" y="310" font-size="14" fill="#000000" textLength="30.58" lengthAdjust="spacingAndGlyphs">Date</text>
+        <text x="183.19" y="310" font-size="14" fill="#000000" textLength="31.25" lengthAdjust="spacingAndGlyphs">[0..1]</text>
+      </a>
+    </g>
+  </g>
+  <g data-md-element="253a4597-fb1f-48b9-8d89-9796e38c8daa">
+    <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie">
+      <title>Registratie</title>
+      <rect x="173.75" y="445.5" width="280" height="202" rx="2" fill="#f5f7fd"/>
+      <rect x="174.25" y="446" width="279" height="201" rx="1.5" fill="none" stroke="#4f73cc" stroke-width="1"/>
+      <rect x="174.75" y="446.5" width="278" height="47.5" fill="#4f73cc"/>
+      <line x1="174.75" y1="493.5" x2="452.75" y2="493.5" stroke="#4f73cc" stroke-width="1"/>
+      <text x="276.8" y="462.5" font-size="12" font-weight="300" fill="#ffffff" textLength="73.91" lengthAdjust="spacingAndGlyphs">«Objecttype»</text>
+      <text x="267.83" y="483.5" font-size="18" font-weight="500" fill="#ffffff" textLength="91.84" lengthAdjust="spacingAndGlyphs">Registratie</text>
+      <text x="182.75" y="514" font-size="12" font-weight="300" fill="#000000" textLength="88.02" lengthAdjust="spacingAndGlyphs">«Attribuutsoort»</text>
+    </a>
+    <g data-md-element="fc69b6ed-7e10-4735-9853-3d629dd75b70">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_attribuutsoort_versie">
+        <title>versie</title>
+        <text x="182.75" y="533" font-size="14" font-weight="600" fill="#000000" textLength="41.44" lengthAdjust="spacingAndGlyphs">versie</text>
+        <text x="224.19" y="533" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="232.66" y="533" font-size="14" fill="#000000" textLength="104.59" lengthAdjust="spacingAndGlyphs">CharacterString</text>
+        <text x="341.25" y="533" font-size="14" fill="#000000" textLength="23.91" lengthAdjust="spacingAndGlyphs">{id}</text>
+      </a>
+    </g>
+    <g data-md-element="f1172160-2c2a-49e1-9bdc-0d9afa4f5bf2">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_attribuutsoort_status_registratie">
+        <title>/statusRegistratie</title>
+        <text x="182.75" y="553" font-size="14" font-weight="600" fill="#000000" textLength="119.89" lengthAdjust="spacingAndGlyphs">/statusRegistratie</text>
+        <text x="302.64" y="553" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="311.11" y="553" font-size="14" fill="#000000" textLength="111.92" lengthAdjust="spacingAndGlyphs">StatusRegistratie</text>
+      </a>
+    </g>
+    <g data-md-element="98c98824-c725-44ec-8bd2-6f853b0d2142">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_attribuutsoort_begin_geldigheid">
+        <title>beginGeldigheid</title>
+        <text x="182.75" y="573" font-size="14" font-weight="600" fill="#000000" textLength="110.84" lengthAdjust="spacingAndGlyphs">beginGeldigheid</text>
+        <text x="293.59" y="573" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="302.06" y="573" font-size="14" fill="#000000" textLength="30.58" lengthAdjust="spacingAndGlyphs">Date</text>
+      </a>
+    </g>
+    <g data-md-element="b4bb494f-73b8-4e76-9a94-f5566cdd8cb2">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_attribuutsoort_eind_geldigheid">
+        <title>eindGeldigheid</title>
+        <text x="182.75" y="593" font-size="14" font-weight="600" fill="#000000" textLength="102.09" lengthAdjust="spacingAndGlyphs">eindGeldigheid</text>
+        <text x="284.84" y="593" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="293.31" y="593" font-size="14" fill="#000000" textLength="30.58" lengthAdjust="spacingAndGlyphs">Date</text>
+        <text x="327.89" y="593" font-size="14" fill="#000000" textLength="31.25" lengthAdjust="spacingAndGlyphs">[0..1]</text>
+      </a>
+    </g>
+    <g data-md-element="87148fc5-76ff-486e-8c76-d91feec2d4f8">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_attribuutsoort_tijdstip_registratie">
+        <title>tijdstipRegistratie</title>
+        <text x="182.75" y="613" font-size="14" font-weight="600" fill="#000000" textLength="118.69" lengthAdjust="spacingAndGlyphs">tijdstipRegistratie</text>
+        <text x="301.44" y="613" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="309.91" y="613" font-size="14" fill="#000000" textLength="62.34" lengthAdjust="spacingAndGlyphs">DateTime</text>
+      </a>
+    </g>
+    <g data-md-element="aedf4ea1-1651-4996-b4a2-9fa6a49c07e4">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_objecttype_registratie_attribuutsoort_eind_registratie">
+        <title>eindRegistratie</title>
+        <text x="182.75" y="633" font-size="14" font-weight="600" fill="#000000" textLength="101.89" lengthAdjust="spacingAndGlyphs">eindRegistratie</text>
+        <text x="284.64" y="633" font-size="14" font-weight="600" fill="#000000" textLength="4.47" lengthAdjust="spacingAndGlyphs">:</text>
+        <text x="293.11" y="633" font-size="14" fill="#000000" textLength="62.34" lengthAdjust="spacingAndGlyphs">DateTime</text>
+        <text x="359.45" y="633" font-size="14" fill="#000000" textLength="31.25" lengthAdjust="spacingAndGlyphs">[0..1]</text>
+      </a>
+    </g>
+  </g>
+  <g data-md-element="20105ccb-5bd1-4203-8e8a-59e060bc11e9">
+    <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_enumeratie_status_registratie">
+      <title>StatusRegistratie</title>
+      <rect x="656.25" y="20" width="280" height="106" rx="2" fill="#f5f7fd"/>
+      <rect x="656.75" y="20.5" width="279" height="105" rx="1.5" fill="none" stroke="#4f73cc" stroke-width="1"/>
+      <rect x="657.25" y="21" width="278" height="47.5" fill="#4f73cc"/>
+      <line x1="657.25" y1="68" x2="935.25" y2="68" stroke="#4f73cc" stroke-width="1"/>
+      <text x="758.36" y="37" font-size="12" font-weight="300" fill="#ffffff" textLength="75.78" lengthAdjust="spacingAndGlyphs">«Enumeratie»</text>
+      <text x="722.97" y="58" font-size="18" font-weight="500" fill="#ffffff" textLength="146.55" lengthAdjust="spacingAndGlyphs">StatusRegistratie</text>
+    </a>
+    <g data-md-element="ab95ac71-5336-4ac9-8e4a-af0f9dde5b73">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_enumeratie_status_registratie_enumeratiewaarde_actief">
+        <title>Actief</title>
+        <text x="665.25" y="91.5" font-size="14" font-weight="600" fill="#000000" textLength="40.45" lengthAdjust="spacingAndGlyphs">Actief</text>
+      </a>
+    </g>
+    <g data-md-element="16c9607a-1658-4844-970d-a95aac5abc7c">
+      <a href="#informatiemodel_lgm_bg_domein_registratiegegevens_enumeratie_status_registratie_enumeratiewaarde_afgevoerd">
+        <title>Afgevoerd</title>
+        <text x="665.25" y="111.5" font-size="14" font-weight="600" fill="#000000" textLength="70.73" lengthAdjust="spacingAndGlyphs">Afgevoerd</text>
+      </a>
+    </g>
+  </g>
+</svg>

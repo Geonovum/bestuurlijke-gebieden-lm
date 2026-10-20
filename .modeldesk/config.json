@@ -1,0 +1,11 @@
+{
+    "model": "5a946363-98ff-4367-ba99-8c7a8e1ee82d",
+    "stack": "respec",
+    "template": "logisch",
+    "publishDirs": [
+        "data",
+        "media",
+        "js",
+        "css"
+    ]
+}
